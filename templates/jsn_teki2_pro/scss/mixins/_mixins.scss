@@ -1,0 +1,479 @@
+// ======================================
+// --------------- Border ---------------
+// ======================================
+@mixin sunfw-border(
+  $universal: false,
+  $border-width: false,
+  $border-style: false,
+  $border-color: false,
+  $border-top-width: false,
+  $border-top-style: false,
+  $border-top-color: false,
+  $border-right-width: false,
+  $border-right-style: false,
+  $border-right-color: false,
+  $border-bottom-width: false,
+  $border-bottom-style: false,
+  $border-bottom-color: false,
+  $border-left-width: false,
+  $border-left-style: false,
+  $border-left-color: false
+){
+  @if ($universal != false) {
+    @if ($universal == 1) {
+      @if ($border-width != false) { border-width: $border-width + 'px';  }
+      @if ($border-style != false) { border-style: $border-style; }
+      @if ($border-color != false) { border-color: $border-color; }
+    }
+    @if ($universal == 0) {
+      @if ($border-top-width != false){ border-top-width: $border-top-width + 'px'}
+      @if ($border-top-style != false){ border-top-style: $border-top-style}
+      @if ($border-top-color != false){ border-top-color: $border-top-color}
+      @if ($border-right-width != false){ border-right-width: $border-right-width + 'px'}
+      @if ($border-right-style != false){ border-right-style: $border-right-style}
+      @if ($border-right-color != false){ border-right-color: $border-right-color}
+      @if ($border-bottom-width != false){ border-bottom-width: $border-bottom-width + 'px'}
+      @if ($border-bottom-style != false){ border-bottom-style: $border-bottom-style}
+      @if ($border-bottom-color != false){ border-bottom-color: $border-bottom-color}
+      @if ($border-left-width != false){ border-left-width: $border-left-width + 'px'}
+      @if ($border-left-style != false){ border-left-style: $border-left-style}
+      @if ($border-left-color != false){ border-left-color: $border-left-color}                  
+    }
+  } 
+}
+
+// ======================================
+// --------------- Button ---------------
+// ======================================
+@mixin btn-addstyles(
+  $font-weight: false,
+  $letter-spacing: false,
+  $text-shadow: false,
+  $text-transform: false,
+  $bg-hover: false,
+  $box-shadow: false
+) {
+  @if $font-weight != false { font-weight: $font-weight };
+  @if $letter-spacing != false { letter-spacing: $letter-spacing + 'px' };
+  @if $text-shadow != false { text-shadow:  $text-shadow };
+  @if $text-transform != false { text-transform: $text-transform };
+  @if $box-shadow != false {
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+  };
+  &:hover, &.active {
+    @if $bg-hover != false { background-color: $bg-hover };
+  }
+}
+
+@mixin btn-addstylesadvance(
+	$btn-bg,
+	$btn-bg-hover,
+	$border,
+	$color,
+	$font-style,
+	$font-weight,
+	$font-size,
+	$letter-spacing,
+	$text-transform,
+	$text-shadow
+) {
+
+	@include btn-addstyles($font-weight, $letter-spacing, $text-shadow, $text-transform, $btn-bg-hover);
+	@if $color != false { color: $color };
+	@if $btn-bg != false { background: $btn-bg };
+	@if $border != false { border: $border };
+	@if $text-shadow != false { text-shadow: $text-shadow };
+	@if $font-style != false { font-style: $font-style };
+
+}
+
+// ======================================
+// --------------- Heading --------------
+// ======================================
+
+@mixin heading(
+	$headings-color: false,
+	$headings-font-family: false,
+	$headings-font-style: false,
+	$headings-font-weight: false,
+	$headings-base-size: 14px,
+	$headings-letter-spacing: false,
+	$headings-line-height: false,
+	$headings-text-transanform: false
+) {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		@if $headings-font-style != false { font-style: $headings-font-style };
+		@if $headings-font-family != false { font-family: $headings-font-family };
+		@if $headings-font-weight != false { font-weight: $headings-font-weight };
+		@if $headings-line-height != false { line-height: $headings-line-height };
+		@if $headings-color != false { color: $headings-color };
+		@if $headings-letter-spacing != false { letter-spacing: $headings-letter-spacing };
+		@if $headings-text-transanform != false { text-transform: $headings-text-transanform };
+	}
+
+	@if($headings-base-size != false) {
+		h1, .h1 { font-size: floor(($headings-base-size * 2.6)); }
+		h2, .h2 { font-size: floor(($headings-base-size * 2.15)); }
+		h3, .h3 { font-size: ceil(($headings-base-size * 1.7)); }
+		h4, .h4 { font-size: ceil(($headings-base-size * 1.25)); }
+		h5, .h5 { font-size: $headings-base-size; }
+		h6, .h6 { font-size: ceil(($headings-base-size * 0.85)); }
+	}
+
+}
+
+
+// ======================================
+// ----------------- Link ---------------
+// ======================================
+
+@mixin link(
+	$link-color: false,
+	$link-hover-color: false
+) {
+	a {
+		@if $link-color != false { color: $link-color };
+		&:hover {
+			@if $link-hover-color != false { color: $link-hover-color };
+		}
+	}
+}
+
+// ======================================
+// --------------- Content --------------
+// ======================================
+
+@mixin content(
+	$color: false,
+	$background-color: false,
+	$letter-spacing: false,
+	$line-height: false,
+	$text-transanform: false,
+	$text-shadow: false
+) {
+	@if $color != false { color: $color };
+	@if $background-color != false { background-color: $background-color };
+	@if $letter-spacing != false { letter-spacing: $letter-spacing };
+	@if $line-height != false { line-height: $line-height };
+	@if $text-transanform != false { text-transform: $text-transanform };
+	p {
+		@if $text-shadow != false { text-shadow: $text-shadow };
+	}
+}
+
+
+// ======================================
+// ---------- Padding , Margin ----------
+// ======================================
+
+@mixin padding($padding-top : false, $padding-right : false ,$padding-bottom : false, $padding-left: false ) {
+	@if $padding-top != false { padding-top: $padding-top };
+	@if $padding-right != false { padding-right: $padding-right };
+	@if $padding-bottom != false { padding-bottom: $padding-bottom };
+	@if $padding-left != false { padding-left: $padding-left };
+}
+
+@mixin margin($margin-top : false, $margin-right : false ,$margin-bottom : false, $margin-left: false ) {
+	@if $margin-top != false { margin-top: $margin-top };
+	@if $margin-right != false { margin-right: $margin-right };
+	@if $margin-bottom != false { margin-bottom: $margin-bottom };
+	@if $margin-left != false { margin-left: $margin-left };
+}
+
+// ======================================
+// -------- Boxed Layout Setting --------
+// ======================================
+
+@mixin boxed-layout($width: 1170px) {
+	@media (min-width: 768px) {
+
+		width: $width;
+		margin: auto;
+
+		.container {
+			width: $width !important;
+		}
+
+	}
+}
+
+// ======================================
+// -------- RIGHT TO LEFT --------
+// ======================================
+
+// BASIC CONVERTER (ignore these)
+@mixin rtl-base-simple ($property, $direction) {
+  #{$property}:$direction;
+  .sunfw-direction-rtl & {
+    @if $direction == $rtl-right {
+      #{$property}:$rtl-left;
+    }
+    @else {
+      #{$property}:$rtl-right;
+    }
+  }
+}
+@mixin rtl-base-inherit ($property, $direction, $value, $inherit : inherit) {
+  #{$property}-#{$direction}: $value;
+  .sunfw-direction-rtl & {
+    @if $direction == $rtl-right {
+      #{$property}-#{$rtl-left}: $value;
+    }
+    @else {
+      #{$property}-#{$rtl-right}: $value;
+    }
+    #{$property}-#{$direction}: $inherit;
+  }
+}
+@mixin rtl-base-toprightbottomleft ($property, $t, $r, $b, $l) {
+  #{$property}: $t $r $b $l;
+  .sunfw-direction-rtl & {
+    #{$property}: $t $l $b $r;
+  }
+}
+
+// BODY STYLES
+@mixin rtl-direction ($forBody : true) {
+  direction: ltr;
+  @if $forBody {
+    &.rtl {
+      direction: rtl;
+    }
+  }
+  @else {
+    .rtl & {
+      direction: rtl;
+    }
+  }
+}
+@mixin rtl-font-family ($ltr, $rtl, $forBody : false) {
+  font-family: $ltr;
+  @if $forBody {
+    &.rtl, &.non-latin {
+      font-family:$rtl;
+    }
+  }
+  @else {
+    .rtl &, .non-latin & {
+      font-family:$rtl;
+    }
+  }
+}
+
+// MARGIN
+@mixin rtl-margin ($t, $r, $b, $l) {
+  @include rtl-base-toprightbottomleft(margin,$t, $r, $b, $l);
+}
+@mixin rtl-margin-left ($value) {
+  @include rtl-base-inherit(margin,$rtl-left,$value);
+}
+@mixin rtl-margin-right ($value) {
+  @include rtl-base-inherit(margin,$rtl-right,$value);
+}
+
+// PADDING
+@mixin rtl-padding ($t, $r, $b, $l) {
+  @include rtl-base-toprightbottomleft(padding,$t, $r, $b, $l);
+}
+@mixin rtl-padding-left ($value) {
+  @include rtl-base-inherit(padding,$rtl-left,$value);
+}
+@mixin rtl-padding-right ($value) {
+  @include rtl-base-inherit(padding,$rtl-right,$value);
+}
+
+// BORDER
+@mixin rtl-border-width ($t,$r,$b,$l) {
+  @include rtl-base-toprightbottomleft(border-width,$t,$r,$b,$l);
+}
+@mixin rtl-border-style ($t,$r,$b,$l) {
+  @include rtl-base-toprightbottomleft(border-style,$t,$r,$b,$l);
+}
+@mixin rtl-border-left ($value) {
+  @include rtl-base-inherit(border,$rtl-left,$value);
+}
+@mixin rtl-border-right ($value) {
+  @include rtl-base-inherit(border,$rtl-right,$value);
+}
+
+// POSITION
+@mixin rtl-left ($value) {
+  #{$rtl-left}: $value;
+  .sunfw-direction-rtl & {
+    #{$rtl-right}: $value;
+    #{$rtl-left}: auto;
+  }
+}
+@mixin rtl-right ($value) {
+  #{$rtl-right}: $value;
+  .sunfw-direction-rtl & {
+    #{$rtl-left}: $value;
+    #{$rtl-right}: auto;
+  }
+}
+
+// TEXT-ALIGN
+@mixin rtl-text-align-left () {
+  @include rtl-base-simple(text-align, $rtl-left);
+}
+@mixin rtl-text-align-right () {
+  @include rtl-base-simple(text-align, $rtl-right);
+}
+
+// FLOAT
+@mixin rtl-float-left () {
+  @include rtl-base-simple(float, $rtl-left);
+}
+@mixin rtl-float-right () {
+  @include rtl-base-simple(float, $rtl-right);
+}
+
+// BACKGROUND-POSITION
+@mixin rtl-background-position-left ($vertical) {
+  background-position:$rtl-left $vertical !important;
+  .sunfw-direction-rtl & {
+    background-position:$rtl-right $vertical !important;
+  }
+}
+@mixin rtl-background-position-right ($vertical) {
+  background-position:$rtl-right $vertical;
+  .sunfw-direction-rtl & {
+    background-position:$rtl-left $vertical;
+  }
+}
+
+@mixin rtl-background-position-percent ($vertical, $horPercent) {
+  background-position:$horPercent $vertical;
+  .sunfw-direction-rtl & {
+    background-position:100% - $horPercent $vertical;
+  }
+}
+
+// TEXT-SHADOW & BOX-SHADOW
+@mixin rtl-text-shadow ($x, $rest) {
+  text-shadow: $x $rest;
+  .sunfw-direction-rtl & {
+    text-shadow: -1 * $x $rest;
+  }
+}
+@mixin rtl-box-shadow ($x, $rest) {
+  -moz-box-shadow: $x $rest;
+  -webkit-box-shadow: $x $rest;
+  box-shadow: $x $rest;
+  .sunfw-direction-rtl & {
+    -moz-box-shadow: -1 * $x $rest;
+    -webkit-box-shadow: -1 * $x $rest;
+    box-shadow: -1 * $x $rest;
+  }
+}
+
+// BORDER-RADIUS
+@mixin rtl-border-radius($tl, $tr, $br, $bl) {
+  -moz-border-radius: $tl $tr $br $bl;
+  -webkit-border-radius: $tl $tr $br $bl;
+  border-radius: $tl $tr $br $bl;
+  .sunfw-direction-rtl & {
+    -moz-border-radius: $tr $tl $bl $br;
+    -webkit-border-radius: $tr $tl $bl $br;
+    border-radius: $tr $tl $bl $br;
+  }
+}
+
+@mixin rtl-border-radius-topright ($value) {
+  -moz-border-top-#{$rtl-right}-radius: $value;
+  -webkit-border-top-#{$rtl-right}-radius: $value;
+  border-top-#{$rtl-right}-radius: $value;
+  .sunfw-direction-rtl & {
+    -moz-border-top-#{$rtl-left}-radius: $value;
+    -webkit-border-top-#{$rtl-left}-radius: $value;
+    border-top-#{$rtl-left}-radius: $value;
+    -moz-border-top-#{$rtl-right}-radius: inherit;
+    -webkit-border-top-#{$rtl-right}-radius: inherit;
+    border-top-#{$rtl-right}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-bottomright ($value) {
+  -moz-border-bottom-#{$rtl-right}-radius: $value;
+  -webkit-border-bottom-#{$rtl-right}-radius: $value;
+  border-bottom-#{$rtl-right}-radius: $value;
+  .sunfw-direction-rtl & {
+    -moz-border-bottom-#{$rtl-left}-radius: $value;
+    -webkit-border-bottom-#{$rtl-left}-radius: $value;
+    border-bottom-#{$rtl-left}-radius: $value;
+    -moz-border-bottom-#{$rtl-right}-radius: inherit;
+    -webkit-border-bottom-#{$rtl-right}-radius: inherit;
+    border-bottom-#{$rtl-right}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-topleft ($value) {
+  -moz-border-top-#{$rtl-left}-radius: $value;
+  -webkit-border-top-#{$rtl-left}-radius: $value;
+  border-top-#{$rtl-left}-radius: $value;
+  .sunfw-direction-rtl & {
+    -moz-border-top-#{$rtl-right}-radius: $value;
+    -webkit-border-top-#{$rtl-right}-radius: $value;
+    border-top-#{$rtl-right}-radius: $value;
+    -moz-border-top-#{$rtl-left}-radius: inherit;
+    -webkit-border-top-#{$rtl-left}-radius: inherit;
+    border-top-#{$rtl-left}-radius: inherit;
+  }
+}
+
+@mixin rtl-border-radius-bottomleft ($value) {
+  -moz-border-bottom-#{$rtl-left}-radius: $value;
+  -webkit-border-bottom-#{$rtl-left}-radius: $value;
+  border-bottom-#{$rtl-left}-radius: $value;
+  .sunfw-direction-rtl & {
+    -moz-border-bottom-#{$rtl-right}-radius: $value;
+    -webkit-border-bottom-#{$rtl-right}-radius: $value;
+    border-bottom-#{$rtl-right}-radius: $value;
+    -moz-border-bottom-#{$rtl-left}-radius: inherit;
+    -webkit-border-bottom-#{$rtl-left}-radius: inherit;
+    border-bottom-#{$rtl-left}-radius: inherit;
+  }
+}
+
+// Translate
+@mixin rtl-translate($x,$y) {
+  -webkit-transform: translate($x,$y);
+      -ms-transform: translate($x,$y); // IE9 only
+       -o-transform: translate($x,$y);
+          transform: translate($x,$y);
+.sunfw-direction-rtl & {
+  -webkit-transform: translate(-$x,$y);
+     -ms-transform: translate(-$x,$y); // IE9 only
+      -o-transform: translate(-$x,$y);
+         transform: translate(-$x,$y);
+  }
+}
+// Translate X
+@mixin rtl-translateX($x) {
+  -webkit-transform: translateX($x);
+      -ms-transform: translateX($x); // IE9 only
+       -o-transform: translateX($x);
+          transform: translateX($x);
+.sunfw-direction-rtl & {
+  -webkit-transform: translateX(-$x);
+     -ms-transform: translateX(-$x); // IE9 only
+      -o-transform: translateX(-$x);
+         transform: translateX(-$x);
+  }
+}
+
+// Translate 3D
+@mixin rtl-translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+      -ms-transform: translate3d($x, $y, $z); // IE9 only
+       -o-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+.sunfw-direction-rtl & {
+  -webkit-transform: translate3d(-$x, $y, $z);
+     -ms-transform: translate3d(-$x, $y, $z); // IE9 only
+      -o-transform: translate3d(-$x, $y, $z);
+         transform: translate3d(-$x, $y, $z);
+  }
+}

@@ -1,0 +1,87 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @subpackage Layout Builder
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+body.show-layout-hints .mod-preview-info {
+	display: none;
+}
+body.show-layout-hints .mod-preview-wrapper {
+	border: initial;
+	background-color: initial;
+	color: initial;
+}
+
+[layout-element]:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#layout-viewer {
+	position: fixed;
+	top: 60px;
+	right: 0;
+	width: 65px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+	padding: 1px;
+	height: 58px;
+	background: #fff;
+	text-align: center;
+	cursor: pointer;
+	z-index: 9999;
+}
+#layout-viewer .inner {
+	position: relative;
+	height: 100%;
+	background: orange;
+	color: #fff;
+}
+#layout-viewer .inner span {
+	display: block;
+	padding-top: 12px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+}
+
+.layout-element-outline {
+	display: none;
+	border: 1px solid orange;
+	z-index: 10001;
+	pointer-events: none;
+	text-align: center;
+}
+div[id^="layout-element-section_"] {
+	display: block;
+}
+
+.layout-element-label {
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.layout-element-type,
+.layout-element-name {
+	border: 1px solid #261C15;
+	padding: 3px 6px;
+	color: white;
+}
+.layout-element-type {
+	background-color: orange;
+}
+.layout-element-name {
+	background-color: #261C15;
+}

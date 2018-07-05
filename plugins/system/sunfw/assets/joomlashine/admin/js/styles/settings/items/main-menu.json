@@ -1,0 +1,230 @@
+{
+	"class": "menu-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"font-type": {
+							"type": "select",
+							"hint":"style-menu-font-type-hint",
+							"label": "font-type",
+							"options": [
+								{
+									"label": "standard",
+									"value": "standard"
+								},
+								{
+									"label": "google",
+									"value": "google"
+								},
+								{
+									"label": "custom",
+									"value": "custom"
+								}
+							],
+							"default": "standard"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"standard-font-family": {
+							"type": "select",
+							"hint":"style-menu-font-family-hint",
+							"label": "font-family",
+							"options": [
+								{
+									"label": "Georgia",
+									"value": "Georgia, serif",
+									"class": "georgia"
+								},
+								{
+									"label": "Palatino Linotype",
+									"value": "'Palatino Linotype', 'Book Antiqua', Palatino, serif",
+									"class": "palatino-linotype"
+								},
+								{
+									"label": "Times New Roman",
+									"value": "'Times New Roman', Times, serif",
+									"class": "times-new-roman"
+								},
+								{
+									"label": "Arial",
+									"value": "Arial, Helvetica, sans-serif",
+									"class": "arial"
+								},
+								{
+									"label": "Arial Black",
+									"value": "'Arial Black', Gadget, sans-serif",
+									"class": "arial-black"
+								},
+								{
+									"label": "Comic Sans MS",
+									"value": "'Comic Sans MS', cursive, sans-serif",
+									"class": "comic-sans-ms"
+								},
+								{
+									"label": "Impact",
+									"value": "Impact, Charcoal, sans-serif",
+									"class": "impact"
+								},
+								{
+									"label": "Lucida Sans Unicode",
+									"value": "'Lucida Sans Unicode', 'Lucida Grande', sans-serif",
+									"class": "lucida-sans-unicode"
+								},
+								{
+									"label": "Tahoma",
+									"value": "Tahoma, Geneva, sans-serif",
+									"class": "tahoma"
+								},
+								{
+									"label": "Trebuchet MS",
+									"value": "'Trebuchet MS', Helvetica, sans-serif",
+									"class": "trebuchet-ms"
+								},
+								{
+									"label": "Verdana",
+									"value": "Verdana, Geneva, sans-serif",
+									"class": "verdana"
+								},
+								{
+									"label": "Courier New",
+									"value": "'Courier New', Courier, monospace",
+									"class": "courier-new"
+								},
+								{
+									"label": "Lucida Console",
+									"value": "'Lucida Console', Monaco, monospace",
+									"class": "lucida-console"
+								}
+							]
+						}
+					},
+					"requires": {
+						"font-type": "standard"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"google-font-family": {
+							"type": "google-font-selector",
+							"hint":"style-menu-google-font-family-hint",
+							"label": "font-family"
+						}
+					},
+					"requires": {
+						"font-type": "google"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"custom-font-file": {
+							"type": "custom-font",
+							"hint":"style-menu-font-file-hint",
+							"label": "font-file"
+						}
+					},
+					"requires": {
+						"font-type": "custom"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-size": {
+							"type": "slider",
+							"hint":"style-menu-font-size-hint",
+							"label": "font-size",
+							"default": 14,
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"text-transform": {
+							"type": "select",
+							"hint":"style-menu-text-transform-hint",
+							"label": "text-transform",
+							"options": [
+								{
+									"label": "none",
+									"value": "none"
+								},
+								{
+									"label": "text-transform-capitalize",
+									"value": "capitalize"
+								},
+								{
+									"label": "text-transform-uppercase",
+									"value": "uppercase"
+								},
+								{
+									"label": "text-transform-lowercase",
+									"value": "lowercase"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "normal-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"background-color": {
+							"type": "color-picker",
+							"hint":"style-menu-background-color-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"color": {
+							"type": "color-picker",
+							"hint":"style-menu-link-color-hint",
+							"label": "link-color"
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "hover-active-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"background-color-hover": {
+							"type": "color-picker",
+							"hint":"style-menu-background-color-hover-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"link-color-hover": {
+							"type": "color-picker",
+							"hint":"style-menu-link-color-hover-hint",
+							"label": "link-color"
+						}
+					}
+				}
+			]
+		}
+	]
+}

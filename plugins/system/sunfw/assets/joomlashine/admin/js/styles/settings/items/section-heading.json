@@ -1,0 +1,134 @@
+{
+	"class": "heading-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"custom": {
+							"type": "checkbox",
+							"hint":"style-use-custom-settings-hint",
+							"label": "use-custom-settings",
+							"value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-color": {
+							"type": "color-picker",
+							"hint":"style-section-heading-color-hint",
+							"label": "color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-font-weight": {
+							"type": "select",
+							"hint":"style-section-heading-font-weight-hint",
+							"label": "font-weight",
+							"options": [
+								{
+									"label": "font-style-normal",
+									"value": "normal"
+								},
+								{
+									"label": "font-weight-bold",
+									"value": "bold"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-text-transform": {
+							"type": "select",
+							"hint":"style-section-heading-text-transform-hint",
+							"label": "text-transform",
+							"options": [
+								{
+									"label": "none",
+									"value": "none"
+								},
+								{
+									"label": "text-transform-capitalize",
+									"value": "capitalize"
+								},
+								{
+									"label": "text-transform-uppercase",
+									"value": "uppercase"
+								},
+								{
+									"label": "text-transform-lowercase",
+									"value": "lowercase"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-text-shadow": {
+							"type": "text-shadow-settings",
+							"hint":"style-section-heading-text-shadow-hint",
+							"label": "text-shadow"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-base-size": {
+							"type": "slider",
+							"hint":"style-section-heading-base-size-hint",
+							"label": "base-size",
+							"default": "",
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-line-height": {
+							"type": "slider",
+							"hint":"style-section-heading-line-height-hint",
+							"label": "line-height",
+							"min": 0,
+							"max": 5,
+							"step": 0.1,
+							"default": "",
+							"suffix": "em"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"headings-letter-spacing": {
+							"type": "slider",
+							"hint":"style-section-heading-letter-spacing-hint",
+							"label": "letter-spacing",
+							"default": "",
+							"suffix": "px"
+						}
+					}
+				}
+			],
+			"requires": {
+				"custom": 1
+			}
+		}
+	]
+}

@@ -1,0 +1,18 @@
+// Mixin for generating new styles
+@mixin btn-styles($btn-bg, $btn-bg-hover, $btn-color, $btn-color-hover) {
+
+  background-color: $btn-bg;
+  color: $btn-color;
+
+  &:hover,
+  &:focus  {
+    background-color: $btn-bg-hover;
+    color: $btn-color-hover;
+  }
+
+  &:active,
+  &.active {
+    background-color: $btn-bg-hover;
+    color: $btn-color-hover;
+  }
+}

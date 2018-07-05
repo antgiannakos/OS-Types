@@ -1,0 +1,116 @@
+{
+	"class": "primary-button-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"custom": {
+							"type": "checkbox",
+							"hint":"style-primary-button-background-color-hint",
+							"label": "use-custom-settings",
+							"value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "normal-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-primary-bg": {
+							"type": "color-picker",
+							"hint":"style-primary-button-background-color-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-primary-border-all": {
+							"type": "border-settings",
+							"hint":"style-primary-button-border-hint",
+							"label": "border"
+						}
+					}
+				},
+				{
+					"class": "col-12 border-item-bottom pd-item-bt-30",
+					"controls": {
+						"btn-primary-box-shadow": {
+							"type": "box-shadow-settings",
+							"hint":"style-primary-button-box-shadow-hint",
+							"label": "box-shadow"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-primary-color": {
+							"type": "color-picker",
+							"hint":"style-primary-button-text-color-hint",
+							"label": "text-color"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"btn-primary-text-shadow": {
+							"type": "text-shadow-settings",
+							"hint":"style-primary-button-text-shadow-hint",
+							"label": "text-shadow"
+						}
+					}
+				}
+			],
+			"requires": {
+				"custom": 1
+			}
+		},
+		{
+			"title": "hover-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-primary-bg-hover": {
+							"type": "color-picker",
+							"hint":"style-primary-button-background-color-hover-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-primary-border-hover": {
+							"type": "color-picker",
+							"hint":"style-primary-button-border-color-hover-hint",
+							"label": "border-color-hover"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-primary-color-hover": {
+							"type": "color-picker",
+							"hint":"style-primary-button-text-color-hover-hint",
+							"label": "text-color"
+						}
+					}
+				}
+			],
+			"requires": {
+				"custom": 1
+			}
+		}
+	]
+}

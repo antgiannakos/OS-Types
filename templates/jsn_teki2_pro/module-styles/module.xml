@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="sunfw-appearance">
+
+		<fieldset name="container" label="SUNFW_APPEARANCE_CONTAINER">
+			<field name="module-container-border" class="form-control" type="sunfwborder" default="1px solid #cccccc" label="SUNFW_APPEARANCE_BORDER" />
+			<field name="module-container-border-radius" class="form-control" type="sunfwborderradius" default="4px 4px 4px 4px" label="SUNFW_APPEARANCE_RADIUS"/>
+			<field name="module-container-background" class="form-control" type="sunfwbackground" prefixName="module-container-background" fieldName="sunfw-appearance" label="SUNFW_APPEARANCE_BACKGROUND" />
+			<field name="module-container-padding" class="form-control" type="sunfwpadding" label="SUNFW_APPEARANCE_PADDING"/>
+		</fieldset>
+
+		<fieldset name="title" label="SUNFW_APPEARANCE_TITLE">
+			<field name="module-title-border-bottom" class="form-control" type="sunfwborder" default="1px solid #cccccc" label="SUNFW_APPEARANCE_BORDER_BOTTOM" />
+			<field name="module-title-bg-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="#0022ff" label="SUNFW_APPEARANCE_BACKGROUND" />
+			<field name="module-title-font-size" suffix="px" max-range="50" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="18" label="SUNFW_APPEARANCE_HEADINGS_FONT_BASE_SIZE"/>
+			<field name="module-title-text-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" label="SUNFW_APPEARANCE_TEXT_COLOR" />
+			
+			<field name="module-title-text-icon-size" type="list" default="fa-lg" class="form-control" label="SUNFW_APPEARANCE_ICON_SIZE" description="">
+				<option value="1em">Large</option>
+				<option value="2em">2x</option>
+				<option value="3em">3x</option>
+				<option value="4em">4x</option>
+				<option value="5em">5x</option>
+			</field>			
+			<field name="module-title-text-icon-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" label="SUNFW_APPEARANCE_ICON_COLOR" />
+		</fieldset>
+
+		<fieldset name="content" label="SUNFW_APPEARANCE_CONTENT">
+			<field name="module-content-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" label="SUNFW_APPEARANCE_COLOR" />
+			<field name="module-content-font-size" suffix="px" max-range="50" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="14" label="SUNFW_APPEARANCE_CONTENT_FONT_SIZE"/>
+		</fieldset>
+
+		<fieldset name="link" label="SUNFW_APPEARANCE_LINK">
+			<field name="module-link-link-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_LINK_COLOR" />
+			<field name="module-link-link-color-hover" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="" label="SUNFW_APPEARANCE_LINK_COLOR_HOVER"/>
+		</fieldset>
+
+		<fieldset name="button" label="SUNFW_APPEARANCE_BUTTON">
+			<field name="module-button-btn-inherit" class="form-control" parentFieldName="sunfw-appearance" inheritFields="module-button-btn-default-padding,module-button-btn-default-bg,module-button-btn-default-bg-hover,module-button-btn-default-border-all,module-button-btn-default-radius,module-button-btn-default-font-style,module-button-btn-default-font-weight,module-button-btn-default-font-size,module-button-btn-default-letter-spacing,module-button-btn-default-color,module-button-btn-default-color-hover,module-button-btn-default-text-transform,module-button-btn-primary-bg,module-button-btn-primary-bg-hover,module-button-btn-primary-color,module-button-btn-primary-color-hover" default="yes" type="sunfwinherit" label="SUNFW_APPEARANCE_INHERIT" />
+			<field type="spacer" class="h4 margin-bottom-20 clearfix" label="SUNFW_APPEARANCE_BUTTON_DEFAULT" />
+			<field name="module-button-btn-default-padding" class="form-control" default="6px 20px 6px 20px" type="sunfwpadding" label="SUNFW_APPEARANCE_PADDING"/>
+			<field name="module-button-btn-default-bg" class="form-control sunfwcolorpicker" default="#ffffff" data-color-type="hex" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG" />
+			<field name="module-button-btn-default-bg-hover" class="form-control sunfwcolorpicker" default="#e6e6e6" data-color-type="hex" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG_HOVER" />
+			<field name="module-button-btn-default-border-all" class="form-control" type="sunfwborder" default="1px solid #cccccc" label="SUNFW_APPEARANCE_BUTTON_BORDER"/>
+			<field name="module-button-btn-default-radius" class="form-control" type="sunfwborderradius" default="4px 4px 4px 4px" label="SUNFW_APPEARANCE_BUTTON_RADIUS"/>
+			<field name="module-button-btn-default-font-style" type="list" default="normal" class="form-control" label="SUNFW_APPEARANCE_BUTTON_FONT_STYLE" description="">
+				<option value="normal">SUNFW_APPEARANCE_FONT_STYLE_NORMAL</option>
+				<option value="italic">SUNFW_APPEARANCE_FONT_STYLE_ITALIC</option>
+				<option value="oblique">SUNFW_APPEARANCE_FONT_STYLE_OBLIQUE</option>
+			</field>
+			<field name="module-button-btn-default-font-weight" type="list" default="normal" class="form-control" label="SUNFW_APPEARANCE_BUTTON_FONT_WEIGHT" description="">
+				<option value="normal">SUNFW_APPEARANCE_FONT_WEIGHT_NORMAL</option>
+				<option value="bold">SUNFW_APPEARANCE_FONT_WEIGHT_BOLD</option>
+			</field>
+			<field name="module-button-btn-default-font-size" suffix="px" max-range="96" min-range="6" class="form-control sunfwslider" type="sunfwslider" default="12" label="SUNFW_APPEARANCE_BUTTON_FONT_SIZE"/>
+			<field name="module-button-btn-default-letter-spacing" suffix="px" max-range="25" min-range="0" class="form-control sunfwslider" type="sunfwslider" default="0" label="SUNFW_APPEARANCE_LETTER_SPACING"/>
+			<field name="module-button-btn-default-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="#333333" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR"/>
+			<field name="module-button-btn-default-color-hover" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="#333333" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR_HOVER"/>			
+			<field name="module-button-btn-default-text-transform" type="list" default="none" class="form-control" label="SUNFW_APPEARANCE_TEXT_TRANSFORM" description="">
+				<option value="none">SUNFW_APPEARANCE_TEXT_TRANSANFORM_NONE</option>
+				<option value="capitalize">SUNFW_APPEARANCE_TEXT_TRANSANFORM_CAPITALIZE</option>
+				<option value="uppercase">SUNFW_APPEARANCE_TEXT_TRANSANFORM_UPPERCASE</option>
+				<option value="lowercase">SUNFW_APPEARANCE_TEXT_TRANSANFORM_LOWERCASE</option>
+			</field>
+			<field name="module-button-btn-default-text-shadow" class="form-control" type="sunfwtextshadow" default="2px 2px 2px #cccccc" label="SUNFW_APPEARANCE_TEXT_SHADOW"/>
+			<field name="module-button-btn-default-box-shadow" class="form-control" type="sunfwboxshadow" default="" label="SUNFW_APPEARANCE_BOX_SHADOW"/>
+
+			<field type="spacer" class="h4 margin-bottom-20 margin-top-20 clearfix" label="SUNFW_APPEARANCE_BUTTON_PRIMARY" />
+			<field name="module-button-btn-primary-bg" class="form-control sunfwcolorpicker" default="#337ab7" data-color-type="hex" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG" />
+			<field name="module-button-btn-primary-bg-hover" class="form-control sunfwcolorpicker" default="#286090" data-color-type="hex" type="sunfwcolorpicker" label="SUNFW_APPEARANCE_BUTTON_BG_HOVER" />
+			<field name="module-button-btn-primary-border" class="form-control" type="sunfwborder" default="1px solid #cccccc" label="SUNFW_APPEARANCE_BUTTON_BORDER"/>
+			<field name="module-button-btn-primary-color" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="#ffffff" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR"/>
+			<field name="module-button-btn-primary-color-hover" class="form-control sunfwcolorpicker" type="sunfwcolorpicker" data-color-type="hex" default="#ffffff" label="SUNFW_APPEARANCE_BUTTON_TEXT_COLOR_HOVER"/>	
+			<field name="module-button-btn-primary-text-shadow" class="form-control" type="sunfwtextshadow" default="2px 2px 2px #cccccc" label="SUNFW_APPEARANCE_TEXT_SHADOW"/>
+			<field name="module-button-btn-primary-box-shadow" class="form-control" type="sunfwboxshadow" default="" label="SUNFW_APPEARANCE_BOX_SHADOW"/>
+		</fieldset>
+	</fields>
+	
+</form>

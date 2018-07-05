@@ -1,0 +1,106 @@
+{
+	"class": "menu-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"font-size": {
+							"type": "slider",
+							"label": "font-size",
+							"default": 12,
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"text-transform": {
+							"type": "select",
+							"label": "text-transform",
+							"options": [
+								{
+									"label": "none",
+									"value": "none"
+								},
+								{
+									"label": "text-transform-capitalize",
+									"value": "capitalize"
+								},
+								{
+									"label": "text-transform-uppercase",
+									"value": "uppercase"
+								},
+								{
+									"label": "text-transform-lowercase",
+									"value": "lowercase"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"width-dropdown": {
+							"type": "slider",
+							"label": "dropdown-width",
+							"min": 150,
+							"max": 650,
+							"default": 200,
+							"suffix": "px"
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "normal-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"background-color": {
+							"type": "color-picker",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"color": {
+							"type": "color-picker",
+							"label": "link-color"
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "hover-active-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"background-color-hover": {
+							"type": "color-picker",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"link-color-hover": {
+							"type": "color-picker",
+							"label": "link-color"
+						}
+					}
+				}
+			]
+		}
+	]
+}

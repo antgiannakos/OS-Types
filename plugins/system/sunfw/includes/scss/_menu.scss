@@ -1,0 +1,84 @@
+// Please do not touch file
+
+@import "mixins/mixins";
+
+@mixin menu-root(
+	$font-size: false,
+    $text-transform: false,
+    $background: false,
+    $link-color: false,
+    $background-hover: false,
+    $link-hover-color: false,
+    $font-type: false,
+    $standard-font-family: false,
+    $google-font-family: false,
+    $google-font-variant: false,
+    $google-font-style: false,
+    $custom-font-file: false
+){
+	@if $background != false {
+		background-color: $background;
+	}
+	ul.navbar-nav > li {
+		> a,
+		> span.nav-header {
+			@if $font-size != false { font-size: $font-size + 'px'; }
+			@if $link-color != false {	color: $link-color;	}
+			@if $text-transform != false {	text-transform: $text-transform;}
+
+			@if $font-type != false {
+				@if ($font-type == standard and $standard-font-family != false){
+					font-family: str-replace($standard-font-family, 'sunfwdbquotes', ',');
+				}
+				@if ($font-type == google and $google-font-family != false){
+					font-family: $google-font-family;
+					@if $google-font-variant != false { font-weight: $google-font-variant; }
+					@if $google-font-style != false { font-style: $google-font-style; }
+				}
+				@if ($font-type == custom and $custom-font-file != false){
+					font-family: $custom-font-file;
+				}
+			}
+
+		}
+		&:hover > a,&.active > a,
+		&:hover > span.nav-header, &.active > span.nav-header {
+			@if $link-hover-color != false { color: $link-hover-color; }
+			@if $background-hover != false { background-color: $background-hover;}
+		}
+	}
+}
+
+@mixin menu-dropdown(
+	$font-size:  				false,
+    $text-transform:			false,
+    $background:  				false,
+    $link-color:  				false,
+    $background-hover:  		false,
+    $link-hover-color: 			false,
+    $width-dropdown:			false
+){
+	ul.dropdown-menu,ul.sunfw-megamenu-sub-menu, .modulecontainer ul.nav-child {
+		@if $background != false { background-color: $background;}
+		li a, li span.nav-header {
+			@if $font-size != false { font-size: $font-size + 'px'; }
+			@if $link-color != false {	color: $link-color;	}
+			@if $text-transform != false {	text-transform: $text-transform; }
+			&:hover, &:focus, &.current {
+				@if $background-hover != false { background-color: $background-hover;}
+				@if $link-hover-color != false { color: $link-hover-color; }
+			}
+		}
+		li.active > a, li.active > span.nav-header {
+			@if $background-hover != false { background-color: $background-hover;}				
+			@if $link-hover-color != false { color: $link-hover-color; }			
+		}
+	}
+	ul.sunfw-megamenu-sub-menu li.current > a, ul.sunfw-megamenu-sub-menu li.current > span.nav-header {
+		@if $background-hover != false { background-color: $background-hover;}				
+		@if $link-hover-color != false { color: $link-hover-color; }
+	}
+	ul.dropdown-menu, ul.sunfw-megamenu-sub-menu ul {
+		@if $width-dropdown != false { width: $width-dropdown + 'px';}
+	}
+}

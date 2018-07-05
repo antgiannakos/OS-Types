@@ -1,0 +1,47 @@
+{
+	"class": "link-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"custom": {
+							"type": "checkbox",
+							"hint":"style-use-custom-settings-hint",
+							"label": "use-custom-settings",
+							"value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"link-color": {
+							"type": "color-picker",
+							"hint":"style-link-normal-color-hint",
+							"label": "normal-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"link-color-hover": {
+							"type": "color-picker",
+							"hint":"style-link-hover-color-hint",
+							"label": "hover-color"
+						}
+					}
+				}
+			],
+			"requires": {
+				"custom": 1
+			}
+		}
+	]
+}

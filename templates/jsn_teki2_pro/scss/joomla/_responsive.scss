@@ -1,0 +1,373 @@
+// ======================================
+// -------- Disable Responsive ----------
+// ======================================
+
+.disable-responsive {
+	.container {
+		width: $container-lg !important;
+	}
+}
+
+// ======================================
+// ------------- Small grid -------------
+// ======================================
+
+@media (max-width: $screen-xs-max) {
+	.sunfw-homepage #sunfw-wrapper{
+		overflow: hidden;
+	}
+	//Menu on mobile
+	.mainmenu{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		margin-left: -15px;
+		margin-right: -15px;
+		nav.navbar.sunfw-menu-head{			
+			ul.navbar-nav > li {
+				margin: 0;	
+				border-top: 1px solid #444;
+	    		border-bottom: 1px solid #111;		
+				> a{
+					padding: 10px;
+					color: #ddd !important;
+					font-size: 15px !important;
+					border-bottom: none;
+					background: #333;
+				}
+				&:hover > a{
+					background: transparent !important;
+				}
+			}
+			i{
+				color: #ddd;
+			}
+			ul.sunfw-tpl-menu > li{
+				background: #333;
+				ul{
+					background: #444 !important;
+				}
+				a{
+					display: block;
+				}
+			}
+		}
+	}
+	.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+		background: transparent;
+	}
+	#sunfw-wrapper .sunfw-menu ul.dropdown-menu,ul.sunfw-megamenu-sub-menu{		
+		li a {
+			&:hover, &:focus, &.current {	
+				background-color: transparent;
+			}
+		}
+	}
+	#sunfw-wrapper .sunfw-menu ul.dropdown-menu,ul.sunfw-megamenu-sub-menu ul{
+		width: 100% !important;
+	}
+	nav.navbar.sunfw-menu-head ul.navbar-nav > li:hover{
+		background: #333;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{ //override bootstrap navbar css
+		color: #ddd;
+	}
+	#sunfw_section_header .sunfw-menu-head{
+		display: inline;
+		.navbar-header {
+			border-bottom: 5px solid #C0CACC;
+			button.navbar-toggle{
+				border-radius: 0;
+				border: none;
+				margin: 0px;
+				background: #566769;
+				@include rtl-float-left;
+				padding: 6px 12px;
+				outline: none;
+				i{
+					font-size: 15px;
+					color: #ccc;
+				}
+			}
+		}
+	}
+	ul.sunfw-tpl-menu li.megamenu ul.sunfw-megamenu-sub-menu .modulecontainer ul .menuShow{
+	    border: none;
+	    padding: 0 15px;
+	    background: transparent;
+	    display: block !important;
+	    left: 0 !important;
+	    opacity: 1;			
+	}
+	body.sunfw-direction-rtl ul.sunfw-tpl-menu > li.dropdown-submenu ul li:hover > ul {
+	    right: 0 !important;
+	}	
+	.sunfw-menu ul.dropdown-menu{
+		width: 100% !important;
+	}
+	#sunfw-master .login input{
+		max-width: 100%;
+	}
+	nav.navbar.sunfw-menu-head ul.navbar-nav ul.dropdown-menu li.active > a,nav.navbar.sunfw-menu-head ul.navbar-nav li > a:hover	{
+		background-color: transparent !important;
+		color: #fff !important;
+	}
+	body.sunfw-direction-rtl .navbar-nav > li{
+	    float: none;
+	}	
+	body.sunfw-direction-rtl ul.sunfw-tpl-menu > li.dropdown-submenu ul li:hover > ul {
+	    right: 0 !important;
+	}
+	//Others
+	body.sunfw-homepage .label_skitter p.jsn-themeslider-caption-title, body.sunfw-homepage .label_skitter p.jsn-themeslider-caption-description {
+	    font-size: 12px !important;
+	}
+	.newsfeed-category .filters > .btn-group{
+		width: 98%;
+	}
+	.newsfeed-category ul.list-striped li{
+		width: 100%;
+		display: inline-block;
+	}
+	.sunfw-pos-right > .module-style:first-child{
+		margin-top: 15px;
+	}
+	#searchForm .btn-toolbar > .btn-group:nth-child(2n){
+		margin-top: 10px;
+	}
+	.statistics .table > thead > tr > th.col-md-6{
+		width: 16%;
+	}
+	#user-registration .controls, #member-registration .controls{
+		margin-left: 0;
+	}
+
+	.sunfw-pos-footer{
+		text-align: center;
+	}
+	.text-tip > img{
+		display: none;
+	}
+	.date_time .input-append{
+		display: inline-block !important;
+	}
+	.control-group.message{
+		width: 100%;
+	} 
+	#sunfw-master .jsn-master .jsn-bootstrap{ 
+		input[type="text"],
+		input[type="password"],
+		input[type="number"],
+		input[type="search"],
+		input[type="email"],
+		input[type="url"]{
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+	    	-webkit-box-sizing: border-box;
+	    	-ms-box-sizing: border-box;			
+		}
+	}
+	#sunfw-master div.demo-contact-form .jsn-form-content .control-group input{
+		width: 100% !important;
+	}
+	#kunena.layout h1{
+		margin-top: 10px;
+		i{
+			font-size: 1em;
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	ul.sunfw-tpl-menu ul li.parent a span.caret {
+        border-bottom: 4px solid transparent;
+        border-top: 4px solid transparent;
+        @include rtl-border-left(4px dashed);
+        position: absolute;
+        top: 17px;
+    }
+    .sunfw-direction-rtl ul.sunfw-tpl-menu > li.megamenu ul.sunfw-megamenu-sub-menu .sunfw-item .module-style > div > ul li:hover > ul{
+		right: 100%;
+		left: auto;
+	}
+    //Flipback - RTL Flipback
+    ul.sunfw-tpl-menu li.parent.sunfw-submenu-flipback ul li.parent a span.caret{
+    	border-right: 4px dashed;
+    	border-left: 0;
+    }
+    .sunfw-direction-rtl ul.sunfw-tpl-menu .sunfw-submenu-flipback ul li:hover > ul{
+    	left: 100% !important;
+    	right: auto !important;
+    }
+    .sunfw-direction-rtl ul.sunfw-tpl-menu .sunfw-submenu-flipback > ul.sunfw-megamenu-sub-menu{
+    	left: 0 !important;
+    	right: auto !important;
+    }
+    .sunfw-direction-rtl ul.sunfw-tpl-menu > li.dropdown-submenu.sunfw-submenu-flipback li.dropdown-submenu .caret{
+    	right: 5px;
+    	left: auto;
+    	border-left : 4px dashed;
+    	border-right: none;
+    }
+    
+    nav.navbar.sunfw-menu-head ul.navbar-nav > li > a{
+        text-align: center; 
+        background: none;
+    }
+    .sunfw-direction-rtl .navbar-nav{
+		float: right;
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	#kunena.layout .navbar ul.nav.navbar-nav{
+		width: auto;
+	}
+	#kunena.layout .mobile-user{
+		margin-top: 0px !important;
+	}
+	.sunfw-content.boxLayout {
+	    width: auto;
+	    .container{
+	    	width: auto !important;
+	    }
+	}
+	#kunena #search .well label{
+		display: block;
+	}	
+	.our-services,.contact-section{
+		margin-left: -15px;
+		margin-right: -15px;
+	}		
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	body .row{
+		margin-left: -15px;
+    	margin-right: -15px;
+	}
+	.navbar-nav > li > a#klogin{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.statistics .table > thead > tr > th.col-md-6 {
+	    width: 15%;
+	}	
+	nav.navbar.sunfw-menu-head ul.navbar-nav > li > a{
+		padding: 5px 8px;
+		i.fa{
+			display: none;
+		}
+	}
+	[class*='module-style-'] .module-body {
+	    padding: 10px;
+	}
+
+	.shop-roof{
+	 	margin-bottom: -69px;
+	}	
+	body:not(.disable-responsive) .features-col{
+		width: 100% !important;
+	}
+}
+
+// ======================================
+// ------------- Medium grid ------------
+// ======================================
+
+@media (min-width: $screen-md-min) {
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	ul.sunfw-tpl-menu > li.parent > a span.caret{
+		display: none;
+	}	
+	.shop-roof{
+	 	margin-bottom: -115px;
+	}		
+}
+
+
+@media (max-width: $screen-md-max) {
+
+}
+
+
+// ======================================
+// ------------- Large grid -------------
+// ======================================
+
+@media (min-width: $screen-lg-min) {
+
+}
+
+@media (min-width: 768px) {
+	.sunfw-menu-head li.megamenu > .caret {
+		display: none;
+	}
+}
+// responsive max-width: 767px;
+@media (max-width: 767px) {
+	.sunfw-logo{
+		text-align: center;
+		img{
+			display: inline-block;
+		}
+	}
+	.block-menu {
+		position: absolute;
+		top: 0;
+		padding: 0;
+		@include rtl-right(0);
+	}
+	.jsn-breadcrumb {
+		padding: 40px 0;
+	}
+	.blog {
+		.article-info dd:last-child {
+			float: none;
+		}
+		.entry-content {
+			padding: 10px 0;
+		}
+	}
+	.page-header{
+		padding-bottom: 0;
+	}
+	.item-page .page-header h2 {
+		font-size: 35px;
+	}
+	.layout-item .blog [class*='col-xs-'] {
+		width: 100%;
+	}
+	.bottom, .bottom .align-right {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.blog {
+		.items-row [class*="col-xs-4"] {
+			width: 100%;
+		}
+	}
+	.jsn-breadcrumb {
+		padding: 30px 0;
+	}
+	.layout-item .slider-home {
+		padding: 30px 0;
+		h1 {
+			font-size: 24px;
+			margin-bottom: 15px;
+		}
+		.btn {
+			margin-top: 20px;
+		}
+	}
+}
+//Iphone 5
+@media screen and (device-aspect-ratio: 40/71) {	
+	#sunfw-master #recaptcha_table{
+		width: 285px !important;
+	}	
+}

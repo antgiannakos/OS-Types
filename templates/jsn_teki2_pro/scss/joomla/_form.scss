@@ -1,0 +1,46 @@
+
+// form contact
+
+.form-contact {
+  .control-group {
+    margin-bottom: 20px;
+    zoom: 1;
+    &:before {
+      display: table;
+      line-height: 0;
+      content: "";
+    }
+    &:after {
+      display: table;
+      line-height: 0;
+      content: "";
+      clear: both;
+    }
+  }
+  .control-label {
+    @include rtl-float-left();
+    width: 160px;
+    padding-top: 5px;
+    @include rtl-text-align-right();
+  }
+  .controls {
+    display: inline-block;
+    @include rtl-padding-left(20px);
+    width: calc(100% - 180px);
+
+    input, textarea {
+    	display: block;
+    	width: 100%;
+    }
+
+  }
+  .help-block {
+    margin-bottom: 0;
+  }
+  input + .help-block, select + .help-block, textarea + .help-block, .uneditable-input + .help-block, .input-prepend + .help-block, .input-append + .help-block {
+    margin-top: 10px;
+  }
+  .form-actions {
+    @include rtl-padding-left(180px);
+  }
+}

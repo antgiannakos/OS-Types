@@ -1,0 +1,63 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+.sunfw-gallery-selector > .row {
+	margin: 0;
+}
+.sunfw-gallery-selector .image-thumbs {
+	margin-bottom: 1em;
+}
+.sunfw-gallery-selector .image-thumb {
+	position: relative;
+}
+
+.sunfw-gallery-selector .image-thumb .thumbnail {
+	height: 110px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sunfw-gallery-selector .image-thumb .remove-image {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	border: 1px solid #ffffff;
+	color: #333;
+	background: rgba(255,255,255,0.5);
+	text-decoration: none;
+	text-align: center;
+	line-height: 25px;
+}
+.sunfw-gallery-selector .image-thumb .remove-image i {
+	margin: 0;
+	font-size: 12px;
+}
+.sunfw-gallery-selector .image-thumb:hover .remove-image {
+	display: block;
+}
+.sunfw-gallery-selector .image-thumbs {
+	margin: 0 -10px;
+}
+.sunfw-gallery-selector .image-thumbs .image-thumb {
+	width: 200px;
+	display: block;
+	float: left;
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+.sunfw-gallery-selector > a {
+	margin-top: 5px;
+}

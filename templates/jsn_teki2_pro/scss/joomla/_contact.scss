@@ -1,0 +1,88 @@
+.contact {
+  #contact-form.form-horizontal {
+    .control-group {
+      padding-bottom: 20px;
+      &:before {
+        display: table;
+        line-height: 0;
+        content: " ";
+        clear: both;
+      }
+      .control-label {
+        @include rtl-float-left();
+        width: 150px;
+        padding-top: 5px;
+        @include rtl-text-align-right();
+      }
+      .controls {
+        @include rtl-margin-left(170px);
+        input {
+          height: 34px;
+        }
+        input, textarea {
+          display: block;
+          width: 100%;
+          padding: 6px 12px;
+          font-size: 14px;
+          line-height: 1.42857;
+          color: #555555;
+          background-color: #fff;
+          background-image: none;
+          border: 1px solid #ccc;
+          border-radius: 0;
+          @include box-shadow(none);
+          -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          &:focus {
+            border-color: #66afe9;
+            outline: 0;
+            @include box-shadow(none);
+          }
+          &:-moz-placeholder {
+            color: #999;
+            opacity: 1;
+          }
+          &:-ms-input-placeholder {
+            color: #999; }
+          &::-webkit-input-placeholder {
+            color: #999; }
+          &::-ms-expand {
+            border: 0;
+            background-color: transparent;
+          }
+          .form-control[disabled], fieldset[disabled] .form-control {
+            cursor: not-allowed;
+          }
+        }
+      }
+      #jform_contact_email_copy {
+        height: auto;
+        margin-top: 8px;
+        width: auto;
+      }
+    }
+  }
+  .accordion-inner {
+    .thumbnail {
+      clear: both;
+      float: none !important;
+      margin-top: 15px;
+    }
+  }
+  .contact-links {
+    .nav > li > a {
+      border: none;
+    }
+    .nav > li > a:hover, .nav > li > a:focus {
+      background: transparent;
+      border: none;
+    }
+  }
+  .accordion-heading {
+    padding: 10px 0;
+  }
+  a:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,58 @@
+{
+	"class": "image",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"name": {
+							"type": "text",
+							"hint":"megamenu-image-name-hint",
+							"label": "name"
+						}
+					}
+				}
+			]
+		},
+		{
+			"cols": [
+				{
+					"class": "col-sm-12",
+					"controls": {
+						"image": {
+							"type": "image-selector",
+							"hint":"megamenu-image-image-hint",
+							"label": "image"
+						}
+					}
+				},
+				{
+					"class": "col-sm-12",
+					"controls": {
+						"alt": {
+							"type": "text",
+							"hint":"megamenu-image-alt-text-hint",
+							"label": "alt-text"
+						}
+					}
+				}
+			]
+		},
+		{
+			"class": "separator-before",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"class": {
+							"type": "text",
+							"hint":"megamenu-image-custom-classes-hint",
+							"label": "custom-classes"
+						}
+					}
+				}
+			]
+		}
+	]
+}

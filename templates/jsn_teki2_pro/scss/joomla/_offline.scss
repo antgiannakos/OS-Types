@@ -1,0 +1,12 @@
+.jsn-offline {
+  border: 1px solid;
+  border-radius: 4px;
+  margin: 30px auto 0;
+  max-width: 400px;
+  padding: 20px;
+  .form-login {
+    fieldset {
+      border: none;
+    }
+  }
+}

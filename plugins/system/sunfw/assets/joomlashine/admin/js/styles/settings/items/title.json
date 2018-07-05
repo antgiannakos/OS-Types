@@ -1,0 +1,132 @@
+{
+	"class": "title-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"bg-color": {
+							"type": "color-picker",
+							"hint":"style-module-title-background-color-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"text-color": {
+							"type": "color-picker",
+							"hint":"style-module-title-text-color-hint",
+							"label": "text-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-weight": {
+							"type": "select",
+							"hint":"style-module-title-font-weight-hint",
+							"label": "font-weight",
+							"default": "normal",
+							"options": [
+								{
+									"label": "font-style-normal",
+									"value": "normal"
+								},
+								{
+									"label": "font-weight-bold",
+									"value": "bold"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"text-transform": {
+							"type": "select",
+							"hint":"style-module-title-text-transform-hint",
+							"label": "text-transform",
+							"options": [
+								{
+									"label": "none",
+									"value": "none"
+								},
+								{
+									"label": "text-transform-capitalize",
+									"value": "capitalize"
+								},
+								{
+									"label": "text-transform-uppercase",
+									"value": "uppercase"
+								},
+								{
+									"label": "text-transform-lowercase",
+									"value": "lowercase"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-size": {
+							"type": "slider",
+							"hint":"style-module-title-font-size-hint",
+							"label": "font-size",
+							"default": 14,
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"text-icon-size": {
+							"type": "select",
+							"hint":"style-module-title-icon-size-hint",
+							"label": "icon-size",
+							"options": [
+								{
+									"label": "1em",
+									"value": "1em"
+								},
+								{
+									"label": "2em",
+									"value": "2em"
+								},
+								{
+									"label": "3em",
+									"value": "3em"
+								},
+								{
+									"label": "4em",
+									"value": "4em"
+								},
+								{
+									"label": "5em",
+									"value": "5em"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"text-icon-color": {
+							"type": "color-picker",
+							"hint":"style-module-title-icon-color-hint",
+							"label": "icon-color"
+						}
+					}
+				}
+			]
+		}
+	]
+}

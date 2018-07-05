@@ -1,0 +1,248 @@
+{
+	"class": "default-button-settings",
+	"rows": [
+		{
+			"title": "normal-state",
+			"cols": [
+				{
+					"class": "col-12 border-item-bottom",
+					"controls": {
+						"btn-default-padding": {
+							"type": "spacing-settings",
+							"hint":"style-default-button-padding-hint",
+							"label": "padding"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-bg": {
+							"type": "color-picker",
+							"hint":"style-default-button-background-color-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-border-all": {
+							"type": "border-settings",
+							"hint":"style-default-button-border-hint",
+							"label": "border"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-radius": {
+							"type": "border-radius-settings",
+							"hint":"style-default-button-border-radius-hint",
+							"label": "border-radius"
+						}
+					}
+				},
+				{
+					"class": "col-12 border-item-bottom pd-item-bt-30",
+					"controls": {
+						"btn-default-box-shadow": {
+							"type": "box-shadow-settings",
+							"hint":"style-default-button-box-shadow-hint",
+							"label": "box-shadow"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-color": {
+							"type": "color-picker",
+							"hint":"style-default-button-text-color-hint",
+							"label": "text-color",
+							"default": ""
+						}
+					}
+				},
+				{
+					"class": "col-6",
+					"controls": {
+						"btn-default-font-weight": {
+							"type": "select",
+							"hint":"style-default-button-font-weight-hint",
+							"label": "font-weight",
+							"options": [
+								{
+									"label": "font-style-normal",
+									"value": "normal"
+								},
+								{
+									"label": "100",
+									"value": "100"
+								},
+								{
+									"label": "200",
+									"value": "200"
+								},
+								{
+									"label": "300",
+									"value": "300"
+								},
+								{
+									"label": "400",
+									"value": "400"
+								},
+								{
+									"label": "500",
+									"value": "500"
+								},
+								{
+									"label": "600",
+									"value": "600"
+								},
+								{
+									"label": "700",
+									"value": "700"
+								},
+								{
+									"label": "800",
+									"value": "800"
+								},
+								{
+									"label": "900",
+									"value": "900"
+								},
+								{
+									"label": "font-weight-bold",
+									"value": "bold"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-6",
+					"controls": {
+						"btn-default-font-style": {
+							"type": "select",
+							"hint":"style-default-button-font-style-hint",
+							"label": "font-style",
+							"options": [
+								{
+									"label": "font-style-normal",
+									"value": "normal"
+								},
+								{
+									"label": "font-style-italic",
+									"value": "italic"
+								},
+								{
+									"label": "font-style-oblique",
+									"value": "oblique"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-text-transform": {
+							"type": "select",
+							"hint":"style-default-button-text-transform-hint",
+							"label": "text-transform",
+							"options": [
+								{
+									"label": "none",
+									"value": "none"
+								},
+								{
+									"label": "text-transform-capitalize",
+									"value": "capitalize"
+								},
+								{
+									"label": "text-transform-uppercase",
+									"value": "uppercase"
+								},
+								{
+									"label": "text-transform-lowercase",
+									"value": "lowercase"
+								}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-text-shadow": {
+							"type": "text-shadow-settings",
+							"hint":"style-default-button-text-shadow-hint",
+							"label": "text-shadow"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-base-size": {
+							"type": "slider",
+							"hint":"style-default-button-font-size-hint",
+							"label": "font-size",
+							"default": "12",
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"btn-default-letter-spacing": {
+							"type": "slider",
+							"hint":"style-default-button-letter-spacing-hint",
+							"label": "letter-spacing",
+							"default": 0,
+							"suffix": "px"
+						}
+					}
+				}
+			]
+		},
+		{
+			"title": "hover-state",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-bg-hover": {
+							"type": "color-picker",
+							"hint":"style-default-button-background-color-hover-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-border-hover": {
+							"type": "color-picker",
+							"hint":"style-default-button-border-color-hover-hint",
+							"label": "border-color-hover"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"btn-default-color-hover": {
+							"type": "color-picker",
+							"hint":"style-default-button-text-color-hover-hint",
+							"label": "text-color"
+						}
+					}
+				}
+			]
+		}
+	]
+}

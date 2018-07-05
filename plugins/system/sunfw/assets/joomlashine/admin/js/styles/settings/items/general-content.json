@@ -1,0 +1,204 @@
+{
+	"class": "content-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"text-color": {
+							"type": "color-picker",
+							"hint":"style-content-color-hint",
+							"label": "color",
+							"default": "#000"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"content-font-type": {
+							"type": "select",
+							"hint":"style-content-font-type-hint",
+							"label": "font-type",
+							"options": [
+								{
+									"label": "standard",
+									"value": "standard"
+								},
+								{
+									"label": "google",
+									"value": "google"
+								},
+								{
+									"label": "custom",
+									"value": "custom"
+								}
+							],
+							"default": "standard"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"content-standard-font-family": {
+							"type": "select",
+							"hint":"style-content-font-family-hint",
+							"label": "font-family",
+							"options": [
+								{
+									"label": "Georgia",
+									"value": "Georgia, serif",
+									"class": "georgia"
+								},
+								{
+									"label": "Palatino Linotype",
+									"value": "'Palatino Linotype', 'Book Antiqua', Palatino, serif",
+									"class": "palatino-linotype"
+								},
+								{
+									"label": "Times New Roman",
+									"value": "'Times New Roman', Times, serif",
+									"class": "times-new-roman"
+								},
+								{
+									"label": "Arial",
+									"value": "Arial, Helvetica, sans-serif",
+									"class": "arial"
+								},
+								{
+									"label": "Arial Black",
+									"value": "'Arial Black', Gadget, sans-serif",
+									"class": "arial-black"
+								},
+								{
+									"label": "Comic Sans MS",
+									"value": "'Comic Sans MS', cursive, sans-serif",
+									"class": "comic-sans-ms"
+								},
+								{
+									"label": "Impact",
+									"value": "Impact, Charcoal, sans-serif",
+									"class": "impact"
+								},
+								{
+									"label": "Lucida Sans Unicode",
+									"value": "'Lucida Sans Unicode', 'Lucida Grande', sans-serif",
+									"class": "lucida-sans-unicode"
+								},
+								{
+									"label": "Tahoma",
+									"value": "Tahoma, Geneva, sans-serif",
+									"class": "tahoma"
+								},
+								{
+									"label": "Trebuchet MS",
+									"value": "'Trebuchet MS', Helvetica, sans-serif",
+									"class": "trebuchet-ms"
+								},
+								{
+									"label": "Verdana",
+									"value": "Verdana, Geneva, sans-serif",
+									"class": "verdana"
+								},
+								{
+									"label": "Courier New",
+									"value": "'Courier New', Courier, monospace",
+									"class": "courier-new"
+								},
+								{
+									"label": "Lucida Console",
+									"value": "'Lucida Console', Monaco, monospace",
+									"class": "lucida-console"
+								}
+							]
+						}
+					},
+					"requires": {
+						"content-font-type": "standard"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"content-google-font-family": {
+							"type": "google-font-selector",
+							"hint":"style-content-google-font-family-hint",
+							"label": "font-family"
+						}
+					},
+					"requires": {
+						"content-font-type": "google"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"content-custom-font-file": {
+							"type": "custom-font",
+							"hint":"style-content-font-file-hint",
+							"label": "font-file"
+						}
+					},
+					"requires": {
+						"content-font-type": "custom"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-weight": {
+							"type": "select",
+							"hint":"style-content-font-weight-file",
+							"label": "font-weight",
+							"options": [
+								{
+									"label": "font-style-normal",
+									"value": "normal"
+								},
+								{
+									"label": "font-weight-bold",
+									"value": "bold"
+								}
+							]
+						}
+					},
+					"requires": {
+						"content-font-type": "standard"
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-size-base": {
+							"type": "slider",
+							"hint":"style-content-font-size-file",
+							"label": "font-size",
+							"min": 0,
+							"max": 50,
+							"step": 1,
+							"default": 14,
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"line-height-base": {
+							"type": "slider",
+							"hint":"style-content-line-height-file",
+							"label": "line-height",
+							"min": 0,
+							"max": 5,
+							"step": 0.1,
+							"default": 1.4,
+							"suffix": "em"
+						}
+					}
+				}
+			]
+		}
+	]
+}

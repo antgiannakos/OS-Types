@@ -1,0 +1,575 @@
+
+// Please do not touch file
+
+@import "mixins/mixins";
+
+$brand-prefix: ".sunfw-" !default;
+// Page
+
+$inner-background-color : false !default;
+$outer-background-color : false !default;
+$inner-border           : false !default;
+$text-color          : false !default;
+$content-font-type              : false !default;
+$content-standard-font-family    : false !default;
+$content-google-font-family    : false !default;
+$content-google-font-variant: false !default;
+$content-google-font-style: false !default;
+$content-custom-font-family: false !default;
+$font-size-base         : false !default;
+$font-weight            : false !default;
+$line-height-base       : false !default;
+$letter-spacing         : false !default;
+
+// Box Shadow
+$inner-bsd-h-shadow     : false !default;
+$inner-bsd-v-shadow     : false !default;
+$inner-bsd-blur         : 0 !default;
+$inner-bsd-spread       : 0 !default;
+$inner-bsd-color        : 0 !default;
+$inner-bsd-inset        : false !default;
+
+// Bg
+
+$body-bg-background-color       :       false !default;
+$outer-background-image         :       false !default;
+$body-bg-background-repeat      :      false !default;
+$body-bg-background-size        :        false !default;
+$body-bg-background-attachment  :  false !default;
+$body-bg-background-position    :    false !default;
+
+$headings-color:          false !default;
+$headings-font-type:      false !default;
+$headings-standard-font-family:    false !default;
+$headings-google-font-family:      false !default;
+$headings-custom-font-family:      false !default;
+$headings-line-height:    1.1 !default;
+$headings-letter-spacing: false !default;
+$headings-text-transform: false !default;
+$headings-text-shadow-h-shadow: 0 !default;
+$headings-text-shadow-v-shadow: 0 !default;
+$headings-text-shadow-blur: 0 !default;
+$headings-text-shadow-color: #000 !default;
+
+$headings-font-style:     false !default;
+$headings-google-font-variant:    false !default;
+$headings-font-weight:    false !default;
+$headings-base-size :     14 !default;
+
+// Padding
+$btn-default-padding-top: false !default;
+$btn-default-padding-right: false !default;
+$btn-default-padding-bottom: false !default;
+$btn-default-padding-left: false !default;
+
+$btn-default-bg:  #ffffff !default;
+$btn-default-bg-hover:  #e6e6e6 !default;
+$btn-default-border-all:  1px solid #cccccc !default;
+$btn-default-border-hover: #cccccc !default;
+
+$btn-default-font-style:  normal !default;
+$btn-default-font-weight:  normal !default;
+$btn-default-base-size:  18 !default;
+$btn-default-letter-spacing:  false !default;
+$btn-default-color:  #333333 !default;
+$btn-default-color-hover:  #333333 !default;
+$btn-default-text-transform:  none !default;
+
+$btn-default-box-shadow-h-shadow: 0 !default;
+$btn-default-box-shadow-v-shadow: 0 !default;
+$btn-default-box-shadow-blur:     0 !default;
+$btn-default-box-shadow-color:    #000 !default;
+$btn-default-box-shadow-inset:    false !default;
+$btn-default-box-shadow-spread:   false !default;
+
+$btn-default-text-h-shadow: 0 !default;
+$btn-default-text-v-shadow: 0 !default;
+$btn-default-text-blur:     0 !default;
+$btn-default-text-color:    #000 !default;
+
+
+$btn-primary-bg: #337ab7 !default;
+$btn-primary-bg-hover: #286090 !default;
+$btn-primary-color: #ffffff !default;
+$btn-primary-color-hover: #ffffff !default;
+
+$btn-primary-box-shadow-h-shadow: 0 !default;
+$btn-primary-box-shadow-v-shadow: 0 !default;
+$btn-primary-box-shadow-blur:     0 !default;
+$btn-primary-box-shadow-color:    #000 !default;
+$btn-primary-box-shadow-inset:    0 !default;
+$btn-primary-box-shadow-spread:   false !default;
+
+$btn-primary-text-h-shadow: 0 !default;
+$btn-primary-text-v-shadow: 0 !default;
+$btn-primary-text-blur:     0 !default;
+$btn-primary-text-color:    #000 !default;
+
+$btn-primary-border-all:  $btn-default-border-all !default;
+$btn-primary-border-hover:  $btn-default-border-hover !default;
+$btn-primary-font-style:  $btn-default-font-style !default;
+$btn-primary-font-weight:  $btn-default-font-weight !default;
+$btn-primary-font-size:  $btn-default-base-size;
+$btn-primary-letter-spacing:  $btn-default-letter-spacing !default;
+$btn-primary-text-transform:  $btn-default-text-transform !default;
+
+$link-color:        false !default;
+$link-hover-color:  false !default;
+
+
+// Border bottom default
+$default-button-border-universal: false !default;
+
+$default-button-border-width:     false !default;
+$default-button-border-style:     false !default;
+$default-button-border-color:     false !default;
+
+$default-button-border-top-width:     false !default;
+$default-button-border-bottom-width:  false !default;
+$default-button-border-left-width:    false !default;
+$default-button-border-right-width:   false !default;
+$default-button-border-right-style:   false !default;
+$default-button-border-left-style:    false !default;
+$default-button-border-top-style:     false !default;
+$default-button-border-top-color:     false !default;
+$default-button-border-right-color:   false !default;
+$default-button-border-bottom-color:  false !default;
+$default-button-border-left-color:    false !default;
+$default-button-border-bottom-style:  false !default;
+
+
+// Border bottom primary
+$primary-button-border-universal: false !default;
+
+$primary-button-border-width:     false !default;
+$primary-button-border-style:     false !default;
+$primary-button-border-color:     false !default;
+
+$primary-button-border-top-width:     false !default;
+$primary-button-border-bottom-width:  false !default;
+$primary-button-border-left-width:    false !default;
+$primary-button-border-right-width:   false !default;
+$primary-button-border-right-style:   false !default;
+$primary-button-border-left-style:    false !default;
+$primary-button-border-top-style:     false !default;
+$primary-button-border-top-color:     false !default;
+$primary-button-border-right-color:   false !default;
+$primary-button-border-bottom-color:  false !default;
+$primary-button-border-left-color:    false !default;
+$primary-button-border-bottom-style:  false !default;
+
+
+// button-radius
+$button-radius-top-left     :    false !default;
+$button-radius-bottom-left  :    false !default;
+$button-radius-top-right    :    false !default;
+$button-radius-bottom-right :    false !default;
+
+// Body
+
+body {
+
+  @if $outer-background-color != false { background-color: $outer-background-color; }
+  @if $body-bg-background-repeat != false { background-repeat: $body-bg-background-repeat; }
+  @if $body-bg-background-size != false { background-size: $body-bg-background-size; }
+  @if $body-bg-background-attachment != false { background-attachment: $body-bg-background-attachment; }
+  @if $body-bg-background-position != false { background-position: $body-bg-background-position; }
+
+  @if $text-color != false { color: $text-color; }
+
+  @if $content-font-type != false {
+    @if ($content-font-type == standard and $content-standard-font-family != false){
+      font-family: $content-standard-font-family;
+      @if $font-weight != false { font-weight: $font-weight; }
+    }
+    @if ($content-font-type == google and $content-google-font-family != false){
+      font-family: $content-google-font-family;
+      @if $content-google-font-variant != false { font-weight: $content-google-font-variant; }
+      @if $content-google-font-style != false { font-style: $content-google-font-style; }
+    }
+    @if ($content-font-type == custom and $content-custom-font-family != false){
+      font-family: $content-custom-font-family;
+    }
+  }
+  @if $font-size-base == false { $font-size-base: 14 }
+  font-size: $font-size-base + 'px';
+  @if $line-height-base == false { $line-height-base: 1.4  }
+  line-height: $line-height-base;
+  @if $letter-spacing != false { letter-spacing: $letter-spacing + 'px'; }
+
+}
+
+// Link
+
+a {
+  @if $link-color != false {
+    color: $link-color;
+  }
+  &:hover,&:focus {
+    @if $link-hover-color != false {
+      color: $link-hover-color;
+    }
+  }
+}
+
+// Inner content
+
+#{$brand-prefix}content.boxLayout {
+  @if $inner-background-color != false { background-color: $inner-background-color; }
+
+  @if $inner-border != false { border: $inner-border; }
+
+  @if ( $inner-bsd-h-shadow != false and $inner-bsd-v-shadow != false and $inner-bsd-color != false ) {
+
+    @if ( $inner-bsd-inset == false ) {
+      @include box-shadow($inner-bsd-h-shadow + 'px ' + $inner-bsd-v-shadow + 'px ' + $inner-bsd-blur + 'px ' + $inner-bsd-spread + 'px ' + $inner-bsd-color);
+    }@else {
+      @include box-shadow($inner-bsd-h-shadow + 'px ' + $inner-bsd-v-shadow + 'px ' + $inner-bsd-blur + 'px ' + $inner-bsd-spread + 'px ' + $inner-bsd-color + ' ' + $inner-bsd-inset);
+    }
+
+  }
+
+}
+
+// Heading
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  @if $headings-font-style != false {
+    font-style: $headings-font-style;
+  }
+  @if $headings-font-type != false {
+    @if ($headings-font-type == standard and $headings-standard-font-family != false){
+      font-family: $headings-standard-font-family;
+      @if $headings-font-weight != false {
+        font-weight: $headings-font-weight;
+      }
+    }
+    @if ($headings-font-type == google and $headings-google-font-family != false){
+      font-family: $headings-google-font-family;
+      @if $headings-google-font-variant != false {
+        font-weight: $headings-google-font-variant;
+      }
+    }
+    @if ($headings-font-type == custom and $headings-custom-font-family != false){
+      font-family: $headings-custom-font-family;
+    }
+  }
+  @if $headings-line-height == false {
+    $headings-line-height : 1.4;
+  }
+  line-height: $headings-line-height;
+  @if $headings-color != false {
+    color: $headings-color;
+  }
+  @if $headings-letter-spacing != false {
+    letter-spacing: $headings-letter-spacing + 'px';
+  }
+  @if $headings-text-transform != false {
+    text-transform: $headings-text-transform;
+  }
+
+  // Text Shadow
+  @if ( $headings-text-shadow-h-shadow != 0 and $headings-text-shadow-v-shadow != '' ) {
+    text-shadow: $headings-text-shadow-h-shadow + 'px ' + $headings-text-shadow-v-shadow + 'px ' + $headings-text-shadow-blur + 'px ' + $headings-text-shadow-color;
+  }
+
+}
+
+@if ($headings-base-size == false) {
+  $headings-base-size : 12;
+}
+h1, .h1 {
+  font-size: floor(($headings-base-size * 2.6)) + 'px';
+}
+h2, .h2 {
+  font-size: floor(($headings-base-size * 2.15)) + 'px';
+}
+h3, .h3 {
+  font-size: ceil(($headings-base-size * 1.7)) + 'px';
+}
+h4, .h4 {
+  font-size: ceil(($headings-base-size * 1.25)) + 'px';
+}
+h5, .h5 {
+  font-size: $headings-base-size + 'px';
+}
+h6, .h6 {
+  font-size: ceil(($headings-base-size * 0.85)) + 'px';
+}
+
+
+// Button
+
+// Check border button default
+@if ($default-button-border-universal != false) {
+
+  @if ($default-button-border-universal == 1) {
+
+    .btn-default {
+      @if ($default-button-border-width != false) {
+        border-width: $default-button-border-width + 'px';
+      }
+      @if ($default-button-border-style != false) {
+        border-style: $default-button-border-style;
+      }
+      @if ($default-button-border-color != false) {
+        border-color: $default-button-border-color;
+      }
+    }
+
+  }
+
+  @if ($default-button-border-universal == 0) {
+
+    .btn-default {
+
+      @if ($default-button-border-top-width != false) {
+        border-top-width: $default-button-border-top-width + 'px';
+      }
+      @if ($default-button-border-left-width != false) {
+        border-left-width: $default-button-border-left-width + 'px';
+      }
+      @if ($default-button-border-bottom-width != false) {
+        border-bottom-width: $default-button-border-bottom-width + 'px';
+      }
+      @if ($default-button-border-right-width != false) {
+        border-right-width: $default-button-border-right-width + 'px';
+      }
+
+      @if ($default-button-border-top-style != false) {
+        border-top-style: $default-button-border-top-style;
+      }
+      @if ($default-button-border-left-style != false) {
+        border-left-style: $default-button-border-left-style;
+      }
+      @if ($default-button-border-bottom-style != false) {
+        border-bottom-style: $default-button-border-bottom-style;
+      }
+      @if ($default-button-border-right-style != false) {
+        border-right-style: $default-button-border-right-style;
+      }
+
+      @if ($default-button-border-top-color != false) {
+        border-top-color: $default-button-border-top-color;
+      }
+      @if ($default-button-border-left-color != false) {
+        border-left-color: $default-button-border-left-color;
+      }
+      @if ($default-button-border-bottom-color != false) {
+        border-bottom-color: $default-button-border-bottom-color;
+      }
+      @if ($default-button-border-right-color != false) {
+        border-right-color: $default-button-border-right-color;
+      }
+
+    }
+
+  }
+
+}
+
+.btn-default {
+
+  @if $btn-default-bg != false {
+    background: $btn-default-bg;
+  }
+  @if $btn-default-base-size == false{
+    $btn-default-base-size : 12;
+  }
+  font-size: $btn-default-base-size + 'px';
+
+  @if $btn-default-color != false {
+    color: $btn-default-color;
+  }
+
+  &:hover,&:focus {
+    @if $btn-default-color-hover != false {color: $btn-default-color-hover;}
+    @if $btn-default-border-hover != false {border-color: $btn-default-border-hover;}
+  }
+  @if $btn-default-font-style != false {
+    font-style: $btn-default-font-style;
+  }
+
+  // Text Shadow
+  @if ( $btn-default-text-h-shadow != 0 and $btn-default-text-v-shadow != '' ) {
+    $btn-default-text-shadow: $btn-default-text-h-shadow + 'px ' + $btn-default-text-v-shadow + 'px ' + $btn-default-text-blur + 'px ' + $btn-default-text-color;
+  }@else {
+    $btn-default-text-shadow: false;
+  }
+
+  // Box Shadow
+  @if $btn-default-box-shadow-spread == false {
+    @if $btn-default-box-shadow-inset == false {
+      $btn-default-box-shadow: $btn-default-box-shadow-h-shadow + 'px ' + $btn-default-box-shadow-v-shadow + 'px ' + $btn-default-box-shadow-blur + 'px ' + $btn-default-box-shadow-color;
+    }@else {
+      $btn-default-box-shadow: $btn-default-box-shadow-inset + ' ' + $btn-default-box-shadow-h-shadow + 'px ' + $btn-default-box-shadow-v-shadow + 'px ' + $btn-default-box-shadow-blur + 'px ' + $btn-default-box-shadow-color;
+    }
+  }@else {
+    @if $btn-default-box-shadow-inset == false {
+      $btn-default-box-shadow: $btn-default-box-shadow-h-shadow + 'px ' + $btn-default-box-shadow-v-shadow + 'px ' + $btn-default-box-shadow-blur + 'px ' + $btn-default-box-shadow-spread + 'px ' + $btn-default-box-shadow-color;
+    }@else {
+      $btn-default-box-shadow: $btn-default-box-shadow-inset + ' ' + $btn-default-box-shadow-h-shadow + 'px ' + $btn-default-box-shadow-v-shadow + 'px ' + $btn-default-box-shadow-blur + 'px ' + $btn-default-box-shadow-spread + 'px ' + $btn-default-box-shadow-color;
+    }
+  }
+
+  @include btn-addstyles($btn-default-font-weight, $btn-default-letter-spacing, $btn-default-text-shadow, $btn-default-text-transform, $btn-default-bg-hover,$btn-default-box-shadow);
+
+}
+
+// Check border button primary
+
+@if ($primary-button-border-universal != false) {
+
+  @if ($primary-button-border-universal == 1) {
+
+    .btn-primary {
+      @if ($primary-button-border-width != false) {
+        border-width: $primary-button-border-width + 'px';
+      }
+      @if ($primary-button-border-style != false) {
+        border-style: $primary-button-border-style;
+      }
+      @if ($primary-button-border-color != false) {
+        border-color: $primary-button-border-color;
+      }
+    }
+
+  }
+
+  @if ($primary-button-border-universal == 0) {
+
+    .btn-primary {
+
+      @if ($primary-button-border-top-width != false) {
+        border-top-width: $primary-button-border-top-width + 'px';
+      }
+      @if ($primary-button-border-left-width != false) {
+        border-left-width: $primary-button-border-left-width + 'px';
+      }
+      @if ($primary-button-border-bottom-width != false) {
+        border-bottom-width: $primary-button-border-bottom-width + 'px';
+      }
+      @if ($primary-button-border-right-width != false) {
+        border-right-width: $primary-button-border-right-width + 'px';
+      }
+
+      @if ($primary-button-border-top-style != false) {
+        border-top-style: $primary-button-border-top-style;
+      }
+      @if ($primary-button-border-left-style != false) {
+        border-left-style: $primary-button-border-left-style;
+      }
+      @if ($primary-button-border-bottom-style != false) {
+        border-bottom-style: $primary-button-border-bottom-style;
+      }
+      @if ($primary-button-border-right-style != false) {
+        border-right-style: $primary-button-border-right-style;
+      }
+
+      @if ($primary-button-border-top-color != false) {
+        border-top-color: $primary-button-border-top-color;
+      }
+      @if ($primary-button-border-left-color != false) {
+        border-left-color: $primary-button-border-left-color;
+      }
+      @if ($primary-button-border-bottom-color != false) {
+        border-bottom-color: $primary-button-border-bottom-color;
+      }
+      @if ($primary-button-border-right-color != false) {
+        border-right-color: $primary-button-border-right-color;
+      }
+
+    }
+
+  }
+
+}
+
+.btn-primary {
+
+  @if $btn-primary-bg != false {background: $btn-primary-bg;}
+  @if $btn-primary-color != false {color: $btn-primary-color;}
+
+  @if $btn-primary-font-size == false{
+    $btn-primary-font-size : 12;
+  }
+  font-size: $btn-primary-font-size + 'px';
+
+  &:hover,&:focus {
+    @if $btn-primary-color-hover != false {color: $btn-primary-color-hover;}
+    @if $btn-primary-border-hover != false {border-color: $btn-primary-border-hover;}
+
+  }
+  @if $btn-primary-font-style != false{
+    font-style: $btn-primary-font-style;
+  }
+
+  // Text Shadow
+  @if ( $btn-primary-text-h-shadow != 0 and $btn-primary-text-v-shadow != '' ) {
+    $btn-primary-text-shadow: $btn-primary-text-h-shadow + 'px ' + $btn-primary-text-v-shadow + 'px ' + $btn-primary-text-blur + 'px ' + $btn-primary-text-color;
+  }@else {
+    $btn-primary-text-shadow: false;
+  }
+
+  // Box Shadow
+  @if $btn-primary-box-shadow-spread == false {
+    $btn-primary-box-shadow: $btn-primary-box-shadow-h-shadow + 'px ' + $btn-primary-box-shadow-v-shadow + 'px ' + $btn-primary-box-shadow-blur + 'px ' + $btn-primary-box-shadow-color;
+  }@else {
+    $btn-primary-box-shadow: $btn-primary-box-shadow-h-shadow + 'px ' + $btn-primary-box-shadow-v-shadow + 'px ' + $btn-primary-box-shadow-blur + 'px ' + $btn-primary-box-shadow-spread + 'px ' + $btn-primary-box-shadow-color;
+  }
+
+  @include btn-addstyles($btn-primary-font-weight, $btn-primary-letter-spacing, $btn-primary-text-shadow, $btn-primary-text-transform, $btn-primary-bg-hover,$btn-primary-box-shadow);
+
+}
+
+// set border radius
+@if ( $button-radius-top-left != false and $button-radius-bottom-left != false and $button-radius-top-right != false and $button-radius-bottom-right != false ) {
+
+  .btn-primary, .btn-default {
+
+    @if ( $button-radius-top-left != false ) {
+      border-top-left-radius: $button-radius-top-left + 'px';
+      -webkit-border-top-left-radius: $button-radius-top-left + 'px';
+    }
+
+    @if ( $button-radius-bottom-left != false ) {
+      border-bottom-left-radius: $button-radius-bottom-left + 'px';
+      -webkit-border-bottom-left-radius: $button-radius-bottom-left + 'px';
+    }
+
+    @if ( $button-radius-top-right != false ) {
+      border-top-right-radius: $button-radius-top-right + 'px';
+      -webkit-border-top-right-radius: $button-radius-top-right + 'px';
+    }
+
+    @if ( $button-radius-bottom-right != false ) {
+      border-bottom-right-radius: $button-radius-bottom-right + 'px';
+      -webkit-border-bottom-right-radius: $button-radius-bottom-right + 'px';
+    }
+
+  }
+
+}
+
+@if ( $btn-default-padding-top != false ) {
+  .btn-primary, .btn-default {
+    padding-top: $btn-default-padding-top + 'px';
+  }
+}
+@if ( $btn-default-padding-right != false ) {
+  .btn-primary, .btn-default {
+    padding-right: $btn-default-padding-right + 'px';
+  }
+}
+@if ( $btn-default-padding-bottom != false ) {
+  .btn-primary, .btn-default {
+    padding-bottom: $btn-default-padding-bottom + 'px';
+  }
+}
+@if ( $btn-default-padding-left != false ) {
+  .btn-primary, .btn-default {
+    padding-left: $btn-default-padding-left + 'px';
+  }
+}
+

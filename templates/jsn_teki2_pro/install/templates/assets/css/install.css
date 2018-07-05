@@ -1,0 +1,71 @@
+.sunfw-install {
+	margin-bottom: 10px;
+	padding: 40px 0;
+	position: relative;
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	text-align: center;
+}
+.sunfw-install {
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #FFF;
+	font-family: Roboto;
+}
+.content-install {
+	background: rgba(255,255,255,0.4);
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(0,0,0,0.4)), color-stop(100%, rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%, rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 50%, rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+	padding: 15px;
+}
+.content-install a {
+	color: #ff9100;
+}
+.sunfw-install-title {
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+.sunfw-install-content {
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #ffe0b8;
+}
+.sunfw-install-content a {
+	text-decoration: underline;
+	font-weight: bold;
+}
+.sunfw-install-actions {
+	padding-top: 20px;
+}
+.sunfw-install-actions .btn {
+	font-size: 14px;
+	line-height: 24px;
+	color: #000;
+	font-weight: 700;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 8px 25px;
+	border: none;
+	text-transform: capitalize;
+	background-image: -moz-linear-gradient(top,#fff,rgba(255,255,255,0.8));
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#ccc),to(rgba(255,255,255,0.8)));
+	background-image: -webkit-linear-gradient(top,#fff,rgba(255,255,255,0.8));
+	background-image: -o-linear-gradient(top,#fff,rgba(255,255,255,0.8));
+	background-image: linear-gradient(to bottom,#fff,rgba(255,255,255,0.8));
+}
+.sunfw-install-actions .btn:hover {
+	background: #FFF;
+}

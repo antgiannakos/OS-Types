@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params" addfieldpath="/plugins/system/sunfw/includes/admin/fields">
+		<fieldset name="sunfw-options" label="SUNFW_MENU_OPTIONS">
+			<field
+				name="sunfw-no-follow"
+				type="radio"
+				class="btn-group"
+				default="0"
+				label="SUNFW_MENU_NO_FOLLOW"
+				description="SUNFW_MENU_NO_FOLLOW_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field
+				name="sunfw-link-icon"
+				type="sunfwicon"
+				label="SUNFW_MENU_LINK_ICON"
+				description="SUNFW_MENU_LINK_ICON_DESC"
+			/>
+
+			<field
+				name="sunfw-link-description"
+				type="textarea"
+				rows="5"
+				class="input-xxlarge"
+				label="SUNFW_MENU_LINK_DESCRIPTION"
+				description="SUNFW_MENU_LINK_DESCRIPTION_DESC"
+			/>
+
+			<field
+				name="sunfw-page-subheading"
+				type="textarea"
+				rows="5"
+				class="input-xxlarge"
+				label="SUNFW_MENU_PAGE_SUBHEADING"
+				description="SUNFW_MENU_PAGE_SUBHEADING_DESC"
+			/>
+		</fieldset>
+	</fields>
+</form>

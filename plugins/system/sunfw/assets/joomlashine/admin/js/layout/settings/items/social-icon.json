@@ -1,0 +1,95 @@
+{
+	"class": "social-icon",
+	"rows": [
+ 		{
+			"cols": [
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"name": {
+							"type": "text",
+							"hint":"layout-social-icon-name-hint",
+							"label": "name"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"items": {
+							"type": "social-icons",
+							"hint":"layout-social-icon-icons-hint",
+							"label": "icons"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"color": {
+							"type": "color-picker",
+							"hint":"layout-social-icon-color-hint",
+							"label": "icon-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"size": {
+							"type": "slider",
+							"hint":"layout-social-icon-size-hint",
+							"label": "icon-size",
+							"default": 14,
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"target": {
+							"type": "select",
+							"hint":"layout-social-icon-link-target-hint",
+							"label": "link-target",
+							"options": [
+								{"value": "_blank", "label" : "Blank"},
+								{"value": "_parent", "label" : "Parent"},
+								{"value": "_self", "label" : "Self"},
+								{"value": "_top", "label" : "Top"}
+							]
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after display-in-layout",
+					"controls": {
+						"visible_in": {
+							"type": "checkbox",
+							"hint":"layout-social-icon-display-in-layout-hint",
+							"check-none": false,
+							"label": "display-in-layout",
+							"options": [
+								{ "value": "lg", "label": "desktop" },
+								{ "value": "md", "label": "laptop" },
+								{ "value": "sm", "label": "tablet" },
+								{ "value": "xs", "label": "smartphone" }
+							],
+							"default": [ "lg", "md", "sm", "xs" ]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"class": {
+							"type": "text",
+							"hint":"layout-social-icon-custom-classes-hint",
+							"label": "custom-classes"
+						}
+					}
+				}
+			]
+		}
+	]
+}

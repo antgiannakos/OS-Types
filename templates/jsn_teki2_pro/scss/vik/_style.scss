@@ -1,0 +1,733 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ================= GENERAL =================  */
+input, select {
+  margin-left: 0;
+}
+/* ================= Vik Search Module =================  */
+#jsn-pos-promo-left div.jsn-modulecontainer, 
+#jsn-pos-promo-right div.jsn-modulecontainer {
+  margin: 0;
+  padding: 0
+}
+.vrsearchinputdivmod .vrmod-search-wrappercal{
+  width: 150px;
+  float: right;  
+  padding: 0;
+  .vrmod-search-iconcal{
+    display: none;
+  }
+  input{
+    width: 100%;
+  }
+}
+.vrsearchinputdivmod input, 
+.vrsearchinputdivmod select {
+  border-radius: 5px;
+  margin-left: 5px;
+  line-height: 24px;
+  font-size: 12px;
+  float: right;
+  width: 150px;
+}
+.vrsearchinputdivmod select { 
+  padding: 8px 5px;
+}
+.vrsearchinputdivmod {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 15px;
+}
+.moduletablevikre .vrsearchinputdivmod label {
+  float: left;
+  font-size: 16px;
+  line-height: 32px;
+}
+.vrsearchinputdivmod .vrsearchsubmitmod {
+  width: 100%;
+  margin-left: 0;
+  color: #fff;
+  border: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 6px 15px;
+  line-height: inherit;
+  text-transform: capitalize;
+}
+
+/* ================= Vik Event Module =================  */
+#vrspeventmodule {
+  padding: 0 10px;
+}
+.sunfw-com-vikrestaurants .event-select{
+  background: none;
+}
+#vrspeventmodule input, 
+#vrspeventmodule select,.event-select select.vre-tinyselect{
+  border-radius: 5px;
+  margin-left: 0;
+  line-height: 24px;
+  font-size: 12px;
+  width: 100%;
+  max-width: 100%;
+  padding: 6px 37px 6px 7px;
+  appearance: menulist;
+  -webkit-appearance: menulist; 
+  -moz-appearance: menulist;
+}
+.vrspeventfooter div {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0 6px;
+}
+.vrspeventbooknowdiv a {
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.vrspeventbooknowdiv a:hover,
+.vrspeventbooknowdiv a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.vrcustomfields div .phone-field .cf-label{
+  left: 0;
+}
+/* ================= Vik Menu List =================  */
+.vrmenusfieldsdiv {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+.vrmenuslistform .vrmenusfieldsdiv{
+  display: flex;
+  align-items: center;  
+}
+.vrmenusfieldsdiv label {
+  font-size: 16px;
+  margin-top: 0;
+}
+.vrmenusfieldsdiv .hasDatepicker {
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.vrmenusfieldsdiv .vrmenufieldsubmit {
+  padding: 2px 15px 1px;
+  margin: 1px 0 0 10px;
+  font-size: 16px;
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  line-height: 31px;
+}
+.vrmenuslistcont .vrmenublock {
+  background: #eee;
+  border-radius: 0;
+  border: none;
+  transition: all .3s ease-in-out;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockname {
+  font-size: 18px;
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  color: #85a433; 
+}
+.vrmenuslistcont .vrmenublock:hover {
+  color: #fff;
+}
+.vrmenuslistcont .vrmenublock:hover a,
+.vrmenuslistcont .vrmenublock:focus a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+}
+.vrmenuslistcont .vrmenublock .vrmenublock-menu {
+  padding: 10px;
+  display: inline-block;
+}
+.vrmenuslistcont .vrmenublock .vrmenublockworkshname {
+  padding: 3px 8px;
+  background: #ddd;
+}
+.vrmenu-detailsheadsub .vrmenu-detailsheadsubimage, .vrmenu-detailssectionsubimage {
+  display: none;
+}
+/* ================= Vik Reservation Form =================  */
+.vrformfieldset {
+  border: 1px solid #ddd;
+}
+.vrformfieldset legend {
+  padding: 0 10px;
+  line-height: 30px;
+  border-bottom: none;
+  margin-bottom: 0;
+  width: auto;
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+}
+button.vrsearchsubmit,
+input.vrresultbookbutton,
+.vrresultfalsehintdiv a, 
+.vrresultbookbuttonfind,
+.vrresultbookbuttoncontinue,
+#vrconfcontinuebutton,
+input.vrordersubmit {
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  padding: 6px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  border: none;
+}
+#vrpayform {
+  display: inline-block;
+}
+#vrpayform .vrcustomfields span.cf-value{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  .cf-label{
+    order: 1;
+    margin-right: 15px;
+    min-width: 100px;
+  }  
+  .vrinput,.vr-phones-select{
+    order: 2; 
+  }
+}
+.vrcustomfields div .phone-field .vrinput:focus ~ .cf-label, .vrcustomfields div .phone-field .vrinput.has-value ~ .cf-label {
+  left: 0;
+}
+.vrcustomfields .vrinput:focus ~ .cf-label, .vrcustomfields .vrinput.has-value ~ .cf-label,
+.vrcustomfields .vrtextarea:focus ~ .cf-label, .vrcustomfields .vrtextarea.has-value ~ .cf-label {
+   top: 15px; 
+   font-size:15px; 
+   color: #999; 
+}
+.vrcustomfields .vrinput:focus ~ .cf-bar:before, .vrcustomfields .vrinput:focus ~ .cf-bar:after, .vrcustomfields .vrtextarea:focus ~ .cf-bar:before, .vrcustomfields .vrtextarea:focus ~ .cf-bar:after{
+  width: 0;
+}
+.vrcustomfields div .phone-field .vrinput{
+  width: 300px !important;
+}
+.vrcustomfields div .phone-field .vr-phones-select{
+  padding-right: 10px; 
+  a.select2-choice{
+    border: 1px solid #ddd;
+    margin-top: 3px;
+    border-radius: 0;
+    height: 39px;
+    padding-top: 8px;
+    .select2-chosen{
+      line-height: 1.4;
+    }
+  }
+}
+
+
+
+
+.vrresultsummarydiv .vrresultsuminnerdiv {
+  display: inline-block;
+  border-bottom: none;
+}
+#vrresform .vrresultsummarydiv {
+  width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+}
+.vrcustomfields tr td {
+  padding: 5px;
+}
+.vrcouponcodediv .vrcouponcodetext,
+.vrcustomfields .vrinput,
+.vrordercomponentsdiv .vrorderinput {
+  border: 1px solid #ddd;
+  padding: 8px 7px;
+}
+.vrorderboxcontent{
+  padding: 20px 50px;
+}
+.vrorderboxcontent h3.vrorderheader{
+  position: static;
+}
+/* ================= Take Away Menu =================  */
+.vrtkselectmenudiv select {
+  border: 1px solid #ddd;
+  padding: 9px 5px;
+}
+.vrtkitemsdiv {
+  border: none;
+  padding: 0;
+}
+.vrtkitemsdiv .vrtkmenuheader {
+  width: 100%;
+  margin: 10px 0;
+  display: inline-block;
+}
+.vrtkitemsdiv .vrtkmenuheader .vrtkmenutitlediv {
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: none;
+    text-align: center;
+    font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.vrtkitemsdiv .vrtkmenuheader .vrtkmenutitlediv:before {
+    border-top: 2px dashed #fff;
+    bottom: 2px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.vrtkitemsdiv .vrtkmenuheader .vrtkmenutitlediv:after {
+    border-top: 2px dashed #fff;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+}
+.vrtkitemsdiv .vrtkmenuheader .vrtkmenudescdiv {
+  text-align: center;
+  margin: 15px 0 15px;
+}
+.vrtkitemsdiv .vrtkitemleftdiv {
+  width: 70%;
+}
+.vrtkitemsdiv .vrtkitemvardiv {
+  width: 30%;
+  padding-top: 35px;
+}
+.vrtkitemsofmenudiv {
+  background: #fdfaf0;
+  padding: 20px;
+  margin: 0 0 10px;
+}
+.row-fluid span.vrtkvarpricespan,
+.row-fluid span.vrtkvarnamespan,
+.row-fluid span.vrtkitemnamespan,
+.row-fluid span.vrtkitemdescspan {
+  width: inherit;
+  margin-left: 0;
+}
+.vrtkitemsdiv .vrtkitemimagediv {
+  border: none;
+  margin: 0 10px 0 0;
+}
+.vrtkitemsdiv .vrtkitemimagediv img {
+  display: block;
+}
+.vrtkitemsdiv .vrtkiteminfodiv .vrtkitemnamespan {
+  font-weight: normal;
+  display: block;
+  float: none;
+  min-height: 24px;
+  font-size: 1.6em;
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+}
+.vrtkitemsdiv .vrtkiteminfodiv span {
+  padding: 0;
+  max-width: 425px;
+}
+.vrtkitemsdiv .vrtksinglevar {
+  display: inline-block;
+  padding: 0;
+  border: none;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv .vrtkvaraddbutton {
+  background: #85a433 url(../images/vik/icon-plus.png) center center no-repeat;
+  padding: 3px;
+  border-radius: 0;
+  transition: all .3s ease-in-out;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv .vrtkvaraddbutton:hover {
+  background-color: rgba(0,0,0,.5) !important;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarnamespan {
+  padding: 10px 5px;
+  text-align: right;
+  float: left;
+  max-width: 30%;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarfloatrdiv {
+  display: inline-block;
+  float: right;
+  position: inherit;
+  right: inherit;
+  border-radius: 2px;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvaraddbuttondiv {
+  border-left: 1px solid #85a433;
+  padding: 5px;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarpricespan {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 5px 8px;
+}
+.vrtkgotopaydiv .vrtkgotopaybutton {
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  padding: 6px 20px;
+  color: #fff;
+  line-height: 28px;  
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow span,
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow .vrtkconfcartonamespan,
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow span,
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow .vrtkconfcartpricespan,
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow span.vrtkconfcartremovespan {
+  width: inherit;
+}
+.vrtkconfcartoneitemrow {
+  border-bottom: 1px solid #ddd;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartrightrow span {
+  margin-left: 5px;
+}
+.vrseparatorcf {
+  font-weight: bold;
+}
+.vrcustomfields tr td:last-child {
+  padding-right: 0;
+}
+.vrtkdatetimediv legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+.vrtkconfcartoneitemrow .vrtkconfcartleftrow .vrtkconfcartonamespan {
+  min-height: inherit;
+}
+/* ================= Menu Detail =================  */
+.vrmenu-detailsmain {
+  position: relative;
+}
+.vrmenu-detailsmain .vrmenu-backdiv {
+  position: absolute;
+  z-index: 99;
+  top: 29px;
+}
+.vrmenu-detailsmain .vrmenu-backdiv a {
+  background:none;
+  border: none;
+  border-radius: 0;
+  margin: 0 0 0 10px;
+  padding: 10px;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+.vrmenu-detailsmain .vrmenu-backdiv a:hover {
+  color: #384908;
+  text-decoration: none;
+}
+.vrmenu-detailshead {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.vrmenu-detailshead h3 {
+  padding: 20px 0;
+}
+.vrmenu-detailslist {
+  padding: 0;
+}
+.vrmenu-detailssection > h3 {
+  padding: 15px 20px;
+  border-bottom: 4px solid #d5d5d5;
+  background: #f7f7f8;
+}
+.vrmenu-detailssection > h3:before {
+    border-top: none;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.vrmenu-detailssection > h3:after {
+    border-top: none;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+.vrmenu-sectionsbar > span {
+  padding: 0 15px;
+}
+.vrmenu-sectionsbar {
+  font-size: 18px;
+}
+.vrmenu-detailssection {
+  margin: 25px 0 0;
+}
+.vrmenu-detailssectionsub {
+  background: #fdfaf0;
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.vrmenu-detailsprodlist {
+  border: none;
+}
+.vrmenu-detailsprodlist > div,
+.vrmenu-detailsprodlist > div:nth-child(2n+1) {
+  background: #fdfaf0;
+  border: none;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.vrmenu-detailsprodlist > div .vrmenu-detailsprodsub {
+  border-bottom: 1px dotted #ccc;
+  padding: 0 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.vrmenu-detailsprodlist > div:last-child .vrmenu-detailsprodsub {
+  border-bottom: none;
+}
+.vrmenu-detailsprod {
+  border: none;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vrmenu-detailsprodsubimage {
+  width: 30%;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vrmenu-detailsprodsubimage img {
+  border-radius: 0;
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  border: none;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vr-menudetailsprodsubnamedesc {
+  width: 70%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vr-menudetailsprodsubnamedesc h3 {
+  font-size: 20px;
+}
+
+.vrmenu-detailsheadsub .vrmenu-detailsheadsubdesc,
+.vrmenu-detailssectionsub .vrmenu-detailssectionsubdesc {
+  width: 100%;
+  float: none;
+  margin: 10px auto;
+  padding: 0;
+}
+/* ================= Cart Module =================  */
+#vrtkcartitemsmodule {
+  padding: 0 10px;
+}
+#vrtkitemcontainer .vrtkcartoneitemrow {
+  border-bottom: 1px dotted #ddd;
+}
+#vrtkcartitemsmodule .vrtkcartbuttonsmodule {
+  margin-top: 10px;
+}
+.row-fluid span.vrtkcartquantityspan,
+.row-fluid span.vrtkcartpricespan,
+.row-fluid span.vrtkcartpricespan,
+.row-fluid span.vrtkcartremovespan,
+.row-fluid span.vrtkcartenamespan,
+.row-fluid span.vrtkcartonamespan {
+  width: inherit;
+  margin-left: 0;
+  min-height: inherit;
+}
+.vrtkcartoneitemrow .vrtkcartrightrow span {
+  padding-top: 0;
+}
+.vrmenu-detailsprodsubprice {
+  margin: 34px 0 0 0;
+  padding: 6px 15px;
+  border-radius: 2px;
+}
+.vrtkcartrightrow .vrtkcartremovespan a {
+  background: #85a433 url(../images/vik/icon-minus.png) center center no-repeat;
+  border-radius: 50%;
+}
+.vrtkcartrightrow .vrtkcartquantityspan {
+  font-size: 14px;
+}
+.vrtkcartrightrow  .vrtkcartpricespan {
+  font-size: 15px;
+  margin-top: -2px;
+}
+#vrtkcartitemsmodule .vrtkcartbuttonsmodule {
+  padding: 10px 0 0;
+  border-top: 1px solid #ddd;
+}
+.vrtkcartbuttonsmodule input.vrtkcartemptybutton {
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 3px;
+  background: #be1f00;
+}
+.vrtkcartbuttonsmodule input.vrtkcartorderbutton {
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 3px;
+  background: #85a433;
+}
+/* ================= Order Page =================  */
+.vrordercomponentsdiv .vrorderinputdiv {
+  display: inline-block;
+}
+.row-fluid span.vrorderradiospan {
+  width: inherit;
+  margin-left: 0;
+  min-height: inherit;
+  margin-right: 10px;
+}
+.vrorderpagediv .vrordertitlediv {
+  border-bottom: none;
+  font-family: "Pacifico", Georgia, "Times New Roman", Times, serif;
+  float: left;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+.vrcouponcodediv .vrcouponcodetext,
+.vrcustomfields .vrinput,
+.vrordercomponentsdiv .vrorderinput {
+  margin-left: 0;
+}
+/* ================= LOGIN =================  */
+.vrloginfieldsdiv .vrloginfield {
+  width: 100%;
+  display: inline-block;
+}
+.vrloginfieldsdiv .vrloginfield .vrloginspanlabel,
+.vrloginfieldsdiv .vrloginfield  .vrloginspaninput {
+  width: inherit;
+  margin-left: 0;
+  float: left;
+}
+.vrloginfieldsdiv .vrloginfield  .vrloginspaninput input[type="submit"] {
+  border: none;
+  padding: 6px 15px;
+  color: #fff;
+  font-size: 18px;
+}
+.vrloginfieldsdiv .vrloginfield:nth-child(3) .vrloginspanlabel {
+  display: none;
+}
+
+/* Fix version 1.6*/
+.vre-tinyselect-wrapper{
+  border: none;
+  background-image: none;
+      overflow: inherit;
+}
+.vre-tinyselect-wrapper select{
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+}
+.vrtkitemsdiv .vrtksinglevar .vrtkvarpricesp{
+  padding-top: 4px;
+}
+.vr-overlay .vr-modal-head{
+  height: 50px;
+}
+.vr-overlay .vr-modal-box{
+  max-width: 800px !important;
+  height: 60% !important;
+}
+.vr-overlay .vr-modal-body{
+  overflow: auto !important;
+}
+#vrresultform .vrresultsuminnerdiv{
+  padding-right: 30px;
+}
+#vrresultform .vrresultsuminnerdiv .vrresultsumvaluesp{
+  display: block;
+}
+
+// MOBILE LAYOUT
+@media (max-width: $screen-xs-max) {
+  .vrmenu-detailsprodsub .vrmenu-detailsprodsubleft .vr-menudetailsprodsubnamedesc {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .vrmenu-detailsprodsubprice{
+    margin: 0;
+    padding: 0;
+    .vrmenu-detailsprodsubpricesp{
+      padding: 3px 10px;
+    }
+  }
+}
+@media (max-width: $screen-sm-max) {
+  #vrpayform .vrcustomfields span.cf-value{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .vrcustomfields div .cf-label{
+    position: static;
+  }
+  .vrcustomfields div .phone-field .vr-phones-select{
+    margin-left: 0;
+    margin-bottom: 2px;
+  }
+  .vrcustomfields div .phone-field .vrinput{
+    width: 250px !important;
+  }
+  .vrtkitemsdiv .vrtkitemleftdiv,.vrtkitemsdiv .vrtkitemvardiv{
+    width: 100%;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .vrstepbardiv .vrstep-inner{
+    padding: 9px 20px;    
+  }  
+}
+

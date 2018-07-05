@@ -1,0 +1,262 @@
+// Please do not touch file
+
+@import "mixins/mixins";
+
+// ======================================
+// ------------ Module Style ------------
+// ======================================
+@mixin module-container(
+
+  $padding-top: false,
+  $padding-bottom: false,
+  $padding-right: false,
+  $padding-left: false,
+  $background-color: false,
+  $background-image: false,
+  $background-repeat: false,
+  $background-attachment: false,
+  $background-size: false,
+  $background-position: false, 
+  $universal: false,
+  $border-width: false,
+  $border-style: false,
+  $border-color: false,
+  $border-top-width: false,
+  $border-top-style: false,
+  $border-top-color: false,
+  $border-right-width: false,
+  $border-right-style: false,
+  $border-right-color: false,
+  $border-bottom-width: false,
+  $border-bottom-style: false,
+  $border-bottom-color: false,
+  $border-left-width: false,
+  $border-left-style: false,
+  $border-left-color: false
+) {
+
+  @if $padding-top != false { padding-top: $padding-top +'px'; }
+  @if $padding-bottom != false { padding-bottom: $padding-bottom + 'px'; }
+  @if $padding-right != false { padding-right: $padding-right + 'px'; }
+  @if $padding-left != false { padding-left: $padding-left + 'px'; }
+  @if $background-color != false { background: $background-color; }
+  @if $background-image != false { background-image: url("#{$background-image}"); }
+  @if $background-repeat != false { background-repeat: $background-repeat; }
+  @if $background-attachment != false { background-attachment: $background-attachment; }  
+  @if $background-size != false { background-size: $background-size; }
+  @if $background-position != false { background-position: $background-position; } 
+  @include sunfw-border($universal,$border-width,$border-style,$border-color,$border-top-width,$border-top-style,$border-top-color,$border-right-width,$border-right-style,$border-right-color,
+   $border-bottom-width, $border-bottom-style, $border-bottom-color, $border-left-width,$border-left-style,$border-left-color);
+}
+
+@mixin module-title(
+  $bg : false,
+  $text-color: false,
+  $text-transform: false,
+  $font-size : false,
+  $icon-size: false,
+  $icon-color: false,
+  $font-weight: false
+) {
+  .module-title .box-title{
+    @if $bg != false { background: $bg };
+    @if ($font-size != false) 
+    { 
+      font-size: $font-size + 'px';
+    }@else{
+        font-size: 14px;
+    }
+    @if $text-transform != false { text-transform: $text-transform};
+    @if $text-color != false { color: $text-color };
+    &:before, i[class*='fa-'] {
+      @if $icon-size != false { font-size: $icon-size };
+      @if $icon-color != false { color: $icon-color };
+    }
+    @if $font-weight != false { font-weight: $font-weight };
+  }
+}
+
+@mixin module-content($color : false, $font-size: false) {
+  @if $color      != false {color: $color};
+  @if $font-size  != false {font-size: $font-size + 'px'};
+}
+
+
+@mixin btn-module-default(
+  $btn-padding-top: false,
+  $btn-padding-bottom: false,
+  $btn-padding-right: false,
+  $btn-padding-left: false, 
+  $btn-background: false,
+  $universal: false,
+  $border-width: false,
+  $border-style: false,
+  $border-color: false,
+  $border-top-width: false,
+  $border-top-style: false,
+  $border-top-color: false,
+  $border-right-width: false,
+  $border-right-style: false,
+  $border-right-color: false,
+  $border-bottom-width: false,
+  $border-bottom-style: false,
+  $border-bottom-color: false,
+  $border-left-width: false,
+  $border-left-style: false,
+  $border-left-color: false,
+  $border-top-left-radius: false,
+  $border-top-right-radius: false,
+  $border-bottom-right-radius: false,
+  $border-bottom-left-radius: false,
+  $box-shadow-h-shadow: false,
+  $box-shadow-v-shadow: false,
+  $box-shadow-blur: false,
+  $box-shadow-spread: false,
+  $box-shadow-color: false,
+  $box-shadow-inset: false,
+  $text-color: false,
+  $font-weight: false,
+  $font-style: false,
+  $text-transform: false,
+  $text-shadow-h-shadow: false,
+  $text-shadow-v-shadow: false,
+  $text-shadow-blur: false,
+  $text-shadow-color: false,
+  $base-size: false,
+  $letter-spacing: false,
+  $background-hover: false,
+  $border-color-hover: false,
+  $text-color-hover: false,
+  $custom: false
+) {
+  @if($custom == 1) {
+    .module-body .btn-default, .module-body .btn-primary {
+      @if $btn-padding-top != false { padding-top: $btn-padding-top +'px'; }
+      @if $btn-padding-right != false { padding-right: $btn-padding-right + 'px'; }
+      @if $btn-padding-bottom != false { padding-bottom: $btn-padding-bottom + 'px'; }
+      @if $btn-padding-left != false { padding-left: $btn-padding-left + 'px'; }
+      @if $border-top-left-radius != false { border-top-left-radius: $border-top-left-radius + 'px'; }
+      @if $border-top-right-radius != false { border-top-right-radius: $border-top-right-radius + 'px'; }
+      @if $border-bottom-right-radius != false { border-bottom-right-radius: $border-bottom-right-radius + 'px'; }         
+      @if $border-bottom-left-radius != false { border-bottom-left-radius: $border-bottom-left-radius + 'px'; }
+      @if $font-weight != false { font-weight: $font-weight; }
+      @if $font-style != false { font-style: $font-style; }
+      @if $text-transform != false { text-transform: $text-transform; }
+      @if $base-size != false { font-size: $base-size +'px'; }
+      @if $letter-spacing != false {letter-spacing: $letter-spacing + 'px';} 
+
+    }
+    .module-body .btn-default {
+      @if $btn-background != false {
+        background-color: $btn-background ;
+      }
+      @include sunfw-border($universal,$border-width,$border-style,$border-color,$border-top-width,$border-top-style,$border-top-color,$border-right-width,$border-right-style,$border-right-color,
+      $border-bottom-width, $border-bottom-style, $border-bottom-color, $border-left-width,$border-left-style,$border-left-color);
+      @if ($box-shadow-h-shadow != 0 or $box-shadow-v-shadow != 0 or $box-shadow-blur != 0 or $box-shadow-spread != 0){
+        @if ($box-shadow-color != false){
+          @if ($box-shadow-inset != false){
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px ' + $box-shadow-color + ' ' + $box-shadow-inset);
+          }@else{
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px ' + $box-shadow-color);        
+          }        
+        }@else{
+          @if ($box-shadow-inset != false){
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px ' + $box-shadow-inset);
+          }@else{
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px');        
+          }           
+        }
+      }
+      @if $text-color != false { color: $text-color; }
+      @if ($text-shadow-color != false) {
+        text-shadow: $text-shadow-h-shadow + 'px ' + $text-shadow-v-shadow + 'px ' + $text-shadow-blur + 'px ' + $text-shadow-color;
+      }
+      &:hover{
+        @if $background-hover != false {
+          background-color: $background-hover; 
+        }      
+        @if $border-color-hover != false {
+          border-color: $border-color-hover; 
+        } 
+        @if $text-color-hover != false {
+          color: $text-color-hover; 
+        }
+      }
+    }
+  }
+}
+
+@mixin btn-module-primary(
+  $btn-background: false,
+  $universal: false,
+  $border-width: false,
+  $border-style: false,
+  $border-color: false,
+  $border-top-width: false,
+  $border-top-style: false,
+  $border-top-color: false,
+  $border-right-width: false,
+  $border-right-style: false,
+  $border-right-color: false,
+  $border-bottom-width: false,
+  $border-bottom-style: false,
+  $border-bottom-color: false,
+  $border-left-width: false,
+  $border-left-style: false,
+  $border-left-color: false,
+  $box-shadow-h-shadow: false,
+  $box-shadow-v-shadow: false,
+  $box-shadow-blur: false,
+  $box-shadow-spread: false,
+  $box-shadow-color: false,
+  $box-shadow-inset: false,
+  $text-color: false,
+  $text-shadow-h-shadow: false,
+  $text-shadow-v-shadow: false,
+  $text-shadow-blur: false,
+  $text-shadow-color: false,
+  $background-hover: false,
+  $border-color-hover: false,
+  $text-color-hover: false,
+  $custom: false
+){
+  @if($custom == 1) {
+    .module-body .btn-primary {
+      @if $btn-background != false {
+        background-color: $btn-background ;
+      }
+      @include sunfw-border($universal,$border-width,$border-style,$border-color,$border-top-width,$border-top-style,$border-top-color,$border-right-width,$border-right-style,$border-right-color,
+      $border-bottom-width, $border-bottom-style, $border-bottom-color, $border-left-width,$border-left-style,$border-left-color);
+      @if ($box-shadow-h-shadow != 0 or $box-shadow-v-shadow != 0 or $box-shadow-blur != 0 or $box-shadow-spread != 0){
+        @if ($box-shadow-color != false){
+          @if ($box-shadow-inset != false){
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px ' + $box-shadow-color + ' ' + $box-shadow-inset);
+          }@else{
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px ' + $box-shadow-color);        
+          }        
+        }@else{
+          @if ($box-shadow-inset != false){
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px ' + $box-shadow-inset);
+          }@else{
+            @include box-shadow($box-shadow-h-shadow + 'px ' + $box-shadow-v-shadow + 'px ' + $box-shadow-blur + 'px ' + $box-shadow-spread + 'px');        
+          }           
+        }
+      }
+      @if $text-color != false { color: $text-color; }
+      @if ($text-shadow-color != false) {
+        text-shadow: $text-shadow-h-shadow + 'px ' + $text-shadow-v-shadow + 'px ' + $text-shadow-blur + 'px ' + $text-shadow-color;
+      }
+      &:hover{
+        @if $background-hover != false {
+          background-color: $background-hover; 
+        }      
+        @if $border-color-hover != false {
+          border-color: $border-color-hover; 
+        } 
+        @if $text-color-hover != false {
+          color: $text-color-hover; 
+        }   
+      }    
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+	"class": "link-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"link-color": {
+							"type": "color-picker",
+							"hint":"style-link-normal-color-hint",
+							"label": "normal-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"link-hover-color": {
+							"type": "color-picker",
+							"hint":"style-link-hover-color-hint",
+							"label": "hover-color"
+						}
+					}
+				}
+			]
+		}
+	]
+}

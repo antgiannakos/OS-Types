@@ -1,0 +1,39 @@
+{
+	"class": "inner-page-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"inner-background-color": {
+							"type": "color-picker",
+							"hint":"style-inner-page-background-color-hint",
+							"label": "background-color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"inner-border": {
+							"type": "border-settings",
+							"hint":"style-inner-page-border-settings-hint",
+							"label": "border"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"inner-box-shadow": {
+							"type": "box-shadow-settings",
+							"hint":"style-inner-page-box-shadow-settings-hint",
+							"label": "box-shadow"
+						}
+					}
+				}
+			]
+		}
+	]
+}

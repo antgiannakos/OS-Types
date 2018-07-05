@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>jsn_teki2_pro</name>
+	<creationDate>10/19/2017</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>www.joomlashine.com</authorUrl>
+	<copyright>Copyright (C) 2018-2016 JoomlaShine.com. All Rights Reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.0.1</version>
+	<description>TPL_TEKI2_PRO_XML_DESCRIPTION</description>
+	<group>sunfw</group>
+	<identifiedName>tpl_teki2</identifiedName>
+	<edition>DEVELOPER</edition>
+	<files>
+		<folder>css</folder>
+		<folder>structures</folder>
+		<folder>scss</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<folder>assets</folder>
+		<folder>module-styles</folder>
+		<folder>install</folder>
+		<folder>backups</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template.checksum</filename>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>search-top</position>
+		<position>banner</position>
+		<position>contact</position>
+		<position>footer</position>
+		<position>search-404</position>
+		<position>debug</position>
+		<position>right</position>
+		<position>left</position>
+		<position>innerright</position>
+		<position>innerleft</position>
+		<position>promo</position>
+		<position>content-top</position>
+		<position>content-top-below</position>
+		<position>content-bottom</position>
+		<position>content-bottom-below</position>
+		<position>bottom</position>
+<position>toolbar</position></positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_jsn_teki2_pro.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_jsn_teki2_pro.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced"/>
+		</fields>
+	</config>
+</extension>

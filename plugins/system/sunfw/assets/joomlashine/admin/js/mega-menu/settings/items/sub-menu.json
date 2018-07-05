@@ -1,0 +1,19 @@
+{
+	"class": "menu",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"name": {
+							"type": "text",
+							"hint":"megamenu-submenu-name-hint",
+							"label": "name"
+						}
+					}
+				}
+			]
+		}
+	]
+}

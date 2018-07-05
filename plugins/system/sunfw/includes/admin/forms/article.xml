@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="attribs" addfieldpath="/plugins/system/sunfw/includes/admin/fields">
+		<fieldset name="sunfw-options" label="SUNFW_ARTICLE_OPTIONS">
+			<field
+				name="sunfw_article_type"
+				type="list"
+				class="sunfw_article_type"
+				label="SUNFW_ARTICLE_TYPE"
+				default="standard"
+				description="SUNFW_ARTICLE_TYPE_DESC"
+			>
+				<option value="standard">SUNFW_ARTICLE_TYPE_STANDARD</option>
+				<option value="audio">SUNFW_ARTICLE_TYPE_AUDIO</option>
+				<option value="gallery">SUNFW_ARTICLE_TYPE_GALLERY</option>
+				<option value="link">SUNFW_ARTICLE_TYPE_LINK</option>
+				<option value="quote">SUNFW_ARTICLE_TYPE_QUOTE</option>
+				<option value="video">SUNFW_ARTICLE_TYPE_VIDEO</option>
+			</field>
+
+			<field
+				name="sunfw_featured_image"
+				type="sunfwmedia"
+				class="sunfw_article_type_standard"
+				label="SUNFW_ARTICLE_FEATURED_IMAGE"
+					description="SUNFW_ARTICLE_FEATURED_IMAGE_DESC"
+			/>
+
+			<field
+				name="sunfw_audio_embed_code"
+				type="textarea"
+				rows="3"
+				class="input-xxlarge sunfw_article_type_audio"
+				label="SUNFW_AUDIO_EMBED_CODE"
+				description="SUNFW_AUDIO_EMBED_CODE_DESC"
+				filter="raw"
+			/>
+
+			<field
+				name="sunfw_gallery_images"
+				type="sunfwgallery"
+				class="sunfw_article_type_gallery"
+				label="SUNFW_GALLERY_IMAGES"
+				description="SUNFW_GALLERY_IMAGES_DESC"
+			/>
+
+			<field
+				name="sunfw_link_title"
+				type="text"
+				class="input-xxlarge sunfw_article_type_link"
+				label="SUNFW_LINK_TITLE"
+				description="SUNFW_LINK_TITLE_DESC"
+			/>
+
+			<field
+				name="sunfw_link_url"
+				type="text"
+				class="input-xxlarge sunfw_article_type_link"
+				label="SUNFW_LINK_URL"
+				description="SUNFW_LINK_URL_DESC"
+			/>
+
+			<field
+				name="sunfw_quote_text"
+				type="textarea"
+				rows="3"
+				class="input-xxlarge sunfw_article_type_quote"
+				label="SUNFW_QUOTE_TEXT"
+				description="SUNFW_QUOTE_TEXT_DESC"
+			/>
+
+			<field
+				name="sunfw_quote_author"
+				type="text"
+				class="input-xxlarge sunfw_article_type_quote"
+				label="SUNFW_QUOTE_AUTHOR"
+				description="SUNFW_QUOTE_AUTHOR_DESC"
+			/>
+
+			<field
+				name="sunfw_video_url"
+				type="text"
+				class="input-xxlarge sunfw_article_type_video"
+				label="SUNFW_VIDEO_URL"
+				description="SUNFW_VIDEO_URL_DESC"
+			/>
+		</fieldset>
+	</fields>
+</form>

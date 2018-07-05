@@ -1,0 +1,33 @@
+{
+	"class": "heading-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"main-color": {
+							"type": "color-picker",
+							"hint":"style-main-color-hint",
+							"label": "main-color",
+							"default": "#E70200",
+							"custom_only": true
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"sub-color": {
+							"type": "color-picker",
+							"hint":"style-sub-color-hint",
+							"label": "sub-color",
+							"default": "#F86201",
+							"custom_only": true
+						}
+					}
+				}
+			]
+		}
+	]
+}

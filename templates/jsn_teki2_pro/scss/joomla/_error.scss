@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+.jsn-error-page {
+  text-align: center;
+  h1 {
+    color: #3c3c3c;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    border-bottom: none;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    line-height: 1;
+  }
+  #content {
+    position: absolute;
+    @include rtl-left(0);
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    .table-cell {
+      display: table-cell;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  .content-inner {
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 40px;
+      margin: 15px 0 10px;
+      text-transform: uppercase;
+      color: #3c3c3c;
+      font-family: 'Lato', sans-serif;
+    }
+  p {
+    color: #646464;
+    font-family: Lato;
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  }
+  .jsn-search {
+    input.search-query {
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    height: auto;
+    line-height: 22px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 14px;
+    margin-left: -2px;
+    color: #9e9e9e;
+    border-radius: 2px;
+    }
+  }
+  form{
+    width: auto;
+    max-width: 450px;  
+    margin: 0 auto;  
+    position: relative;
+    button.button {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+      bottom: 0;
+      background: url(../images/search-404.png) no-repeat center;
+      text-indent: -999em;
+      border: none;
+    }
+  }
+  .back-to-home {
+    color: #58c5c0;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .goto-home {
+    margin: 50px 0 0px;
+  a {
+    background-color: #232323;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-family: 'Lato', sans-serif;
+    }
+  }
+  .button {
+    padding: 10px 20px;
+    border-radius: 0;
+  }
+  .search {
+    padding: 15px 0 20px;
+  }
+}
+

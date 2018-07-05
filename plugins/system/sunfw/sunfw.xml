@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="system" method="upgrade">
+	<name>plg_system_sunfw</name>
+	<version>2.2.2</version>
+	<creationDate>06/27/2018</creationDate>
+	<author>JoomlaShine.com</author>
+	<authorEmail>admin@joomlashine.com</authorEmail>
+	<authorUrl>www.joomlashine.com</authorUrl>
+	<copyright>Copyright (C) 2016 JoomlaShine.com. All Rights Reserved.</copyright>
+	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>PLG_SYSTEM_SUNFW_XML_DESCRIPTION</description>
+	<scriptfile>installer.php</scriptfile>
+	<updateservers>
+		<server type="extension" priority="1" name="JSN Sun Framework Updates">http://www.joomlashine.com/versioning/extensions/sunfwframework.xml</server>
+	</updateservers>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">database/mysql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">database/mysql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">database/mysql/updates</schemapath>
+		</schemas>
+	</update>
+	<files>
+		<folder>assets</folder>
+		<folder>database</folder>
+		<folder>includes</folder>
+		<folder>language</folder>
+		<folder>libraries</folder>
+		<folder>styles</folder>
+		<filename>index.html</filename>
+		<filename>installer.php</filename>
+		<filename>requirements.json</filename>
+		<filename>sunfw.defines.php</filename>
+		<filename plugin="sunfw">sunfw.php</filename>
+		<filename>sunfw.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_sunfw.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_sunfw.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_system_sunfw.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_system_sunfw.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_system_sunfw.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_system_sunfw.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_sunfw.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_system_sunfw.sys.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_system_sunfw.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_system_sunfw.sys.ini</language>
+	</languages>
+	<config />
+</extension>

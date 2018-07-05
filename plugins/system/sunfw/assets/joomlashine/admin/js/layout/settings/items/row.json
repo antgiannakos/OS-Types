@@ -1,0 +1,38 @@
+{
+	"class":"row-settings",
+	"title":"row-settings",
+	"rows":[
+		{
+			"cols":[
+				{
+					"class":"col-12",
+					"controls":{
+						"margin":{
+							"type":"spacing-settings",
+							"label":"margin"
+						}
+					}
+				},
+				{
+					"class":"col-12 separator-after",
+					"controls":{
+						"padding":{
+							"type":"spacing-settings",
+							"label":"padding"
+						}
+					}
+				},
+				{
+					"class":"col-12",
+					"controls":{
+						"class":{
+							"type":"text",
+							"label":"custom-classes"
+						}
+					}
+				}
+			]
+		}
+	],
+	"hidden-in-panel":true
+}

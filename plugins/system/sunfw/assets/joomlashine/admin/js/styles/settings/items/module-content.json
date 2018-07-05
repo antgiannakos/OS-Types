@@ -1,0 +1,34 @@
+{
+	"class": "content-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"color": {
+							"type": "color-picker",
+							"hint":"style-module-content-color-hint",
+							"label": "color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-size": {
+							"type": "slider",
+							"hint":"style-module-content-font-size-hint",
+							"label": "font-size",
+							"min": 0,
+							"max": 50,
+							"step": 1,
+							"default": 13,
+							"suffix": "px"
+						}
+					}
+				}
+			]
+		}
+	]
+}

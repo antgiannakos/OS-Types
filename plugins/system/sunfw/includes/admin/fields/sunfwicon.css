@@ -1,0 +1,58 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+ 
+.sunfw-show-icon-container {
+	border: 1px solid #ddd;
+	clear: both;
+   	height: 350px;
+    margin-top: 40px;
+    overflow-y: scroll;
+}
+.sunfw-show-icon-container li.sunfw-item a {
+	padding: 8px 15px;
+	color: #666;
+}
+.sunfw-show-icon-container li.sunfw-item {
+    width: 40px;
+    float: left;
+    text-align: center;
+    margin: 5px 3px;
+    list-style: none;
+    border: 1px solid #ddd;
+    padding: 8px 0;
+}
+.sunfw-show-icon-container .sunfw-items-list {
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.sunfw-show-icon-container li.sunfw-item.active {
+	background-color: #FF9C00;
+}
+.sunfw-show-icon-container li.sunfw-item.active a:hover,
+.sunfw-show-icon-container li.sunfw-item.active a {
+    color: #FFF;
+}
+#sunFwModalIcon {
+	width: 50%;
+	margin-left: -25%;
+}
+
+
+.sunfw-show-icon-container li.sunfw-item a:hover {
+    color: #FFAF00;
+}
+
+#sunFwModalIcon .modal-body {
+	padding: 15px;
+	width: auto;
+}

@@ -1,0 +1,236 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+.hidden {
+	display: none !important;
+}
+.modal.fade.show {
+	opacity: initial;
+}
+.modal.get-started {
+	background: transparent;
+	overflow: hidden;
+	position: fixed;
+	top: 0 !important;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+}
+.modal.get-started a {
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.modal.get-started:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: rgba(0, 0, 0, 0.5);
+}
+.modal.get-started .modal-dialog {
+	position: relative;
+}
+.modal.get-started .modal-content {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	background-clip: padding-box;
+	outline: 0;
+}
+.modal-header:before, .modal-header:after {
+	content: " ";
+	display: table;
+}
+.modal.get-started .modal-header h4.modal-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1.42857;
+	font-weight: 500;
+}
+.modal.get-started .modal-header {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	position: relative;
+}
+.modal.get-started .close {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	border-left: 1px solid #e5e5e5;
+	opacity: 1;
+	margin: 0;
+	width: 45px;
+	color: #b9b9b9;
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	font-size: 25px;
+	-webkit-appearance: none;
+}
+.modal.get-started .close:focus,
+.modal.get-started .close:active {
+	outline: none;
+}
+.modal.get-started .modal-body {
+	position: relative;
+	padding: 15px;
+	width: auto;
+}
+.modal.get-started .modal-body h3 {
+	font-size: 19px;
+	font-weight: 500;
+	margin-top: 0;
+}
+.modal.get-started .modal-body p {
+	line-height: 1.8;
+}
+.modal.get-started .modal-body p:last-child {
+	margin-bottom: 0;
+}
+.modal.get-started .modal-footer {
+	background: transparent;
+}
+.modal.get-started .modal-footer .btn {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	outline: none !important;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	font-size: 13px;
+	font-weight: 500;
+	padding: 6px 20px;
+}
+.modal.get-started .modal-footer .btn:hover,
+.modal.get-started .modal-footer .btn:focus {
+	border-color: transparent;
+	text-decoration: none;
+	text-shadow: none;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+}
+.modal.get-started .modal-footer .btn.btn-link:hover,
+.modal.get-started .modal-footer .btn.btn-link:focus {
+	color: #FF9C00;
+	background-color: #e6e6e6;
+}
+
+div.modal[id^="time-to-go-pro"] {
+	width: 50%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+div.modal[id^="time-to-go-pro"] .modal-dialog {
+	margin-top: 0 !important;
+	margin-left: 0 !important;
+	width: 100% !important;
+}
+div.modal[id^="time-to-go-pro"] .modal-title {
+	margin: 0;
+}
+div.modal[id^="time-to-go-pro"] .modal-header {
+	padding: 15px 20px;
+}
+div.modal[id^="time-to-go-pro"] .modal-header .close {
+	top: 0;
+	position: absolute;
+	right: 15px;
+	padding: 0;
+}
+div.modal[id^="time-to-go-pro"] .modal-header .close:focus,
+div.modal[id^="time-to-go-pro"] .modal-header .close:active {
+	outline: none;
+}
+div.modal[id^="time-to-go-pro"] .modal-header .close span {
+	display: block;
+	font-size: 25px;
+	margin-top: -3px;
+}
+div.modal[id^="time-to-go-pro"] .modal-body {
+	padding: 20px;
+	width: auto;
+}
+div.modal[id^="time-to-go-pro"] .modal-body h3 {
+	margin-top: 0;
+}
+#attrib-sunfw-options .btn-group .disabled {
+	cursor: not-allowed;
+}
+#attrib-sunfw-options .btn-group .disabled + label {
+	float: left;
+	pointer-events: none;
+}
+#attrib-sunfw-options > .control-group {
+	display: inline-block;
+	clear: both;
+	float: left;
+}
+@media (min-width: 768px) {
+	.modal.get-started .modal-dialog {
+		margin: 30px auto;
+	}
+}
+/*Front-end create & edit article*/
+#sunfw-wrapper .edit #sunFwModalGallery,
+#sunfw-wrapper .edit #sunFwModalMedia {
+	position: fixed;
+	top: 5%;
+	bottom: 5%;
+	left: 50%;
+	z-index: 1050;
+	width: 80%;
+	margin-left: -40%;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.3);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+	box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	outline: none;
+}
+#sunfw-wrapper .edit #sunFwModalGallery.in,
+#sunfw-wrapper .edit #sunFwModalMedia.in {
+	z-index: 9999;
+}
+#sunfw-wrapper .edit #sunFwModalGallery .modal-body,
+#sunfw-wrapper .edit #sunFwModalMedia .modal-body {
+	padding: 0;
+	border: none;
+}
+#sunfw-wrapper .edit #sunFwModalGallery .modal-body > iframe,
+#sunfw-wrapper .edit #sunFwModalMedia .modal-body > iframe {
+	width: 100%;
+	border: none;
+}
+#sunfw-wrapper .edit #sunFwModalGallery .modal-header h3,
+#sunfw-wrapper .edit #sunFwModalMedia .modal-header h3 {
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+}

@@ -1,0 +1,156 @@
+
+
+// Base
+// -------------------------
+
+body {
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  letter-spacing: $headings-letter-spacing;
+  text-transform: $headings-text-transanform;
+  @if $headings-font-style != false { font-style: $headings-font-style };
+  @if $headings-font-weight != false { font-weight: $headings-font-weight };
+}
+
+//
+// Buttons
+// --------------------------------------------------
+
+// Common styles
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  
+}
+
+// Common styles
+.btn {
+  // Remove the gradient for the pressed/active state
+  @include transition(all .3s);
+  &:active,
+  &.active {
+    
+  }
+}
+
+// Apply the mixin to the buttons
+.btn-outline-inverse {
+  border: 2px solid #fff;
+  border-radius: 100px;
+  @include btn-styles(#fff, transparent, #000, #fff); 
+}
+.btn-outline { 
+  border: 2px solid #fff;
+  border-radius: 100px;
+  @include btn-styles(transparent, #fff, #fff, #000);  
+}
+
+
+//
+// Images
+// --------------------------------------------------
+
+
+
+
+//
+// Dropdowns
+// --------------------------------------------------
+
+
+
+//
+// Navbar
+// --------------------------------------------------
+.navbar-link {
+   li {
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &.active {
+      a {
+        position: relative;
+        font-size: 16px;
+        &:before {
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          content: '';
+          background-color: $brand-warning;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+
+     a {
+      color: #8A91A4;
+      padding-left: 0;
+      padding-right: 0;
+      &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: $brand-warning;
+      }
+    }
+  }
+}
+
+
+
+//
+// Alerts
+// --------------------------------------------------
+
+
+.alert-notice {
+  @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
+}
+
+.alert-error {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}
+
+
+//
+// Progress bars
+// --------------------------------------------------
+
+
+//
+// List groups
+// --------------------------------------------------
+
+
+
+
+//
+// Panels
+// --------------------------------------------------
+
+// Common styles
+.panel {
+  box-shadow: none;
+}
+
+.panel-nostyle {
+  background-color: transparent;
+}
+
+
+//
+// Wells
+// --------------------------------------------------
+
+

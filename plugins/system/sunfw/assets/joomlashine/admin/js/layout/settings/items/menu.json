@@ -1,0 +1,181 @@
+{
+	"class": "menu",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"name": {
+							"type": "text",
+							"hint":"layout-menu-name-hint",
+							"label": "name"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-type": {
+							"type": "menu-type",
+							"hint":"layout-menu-hint",
+							"label": "menu"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-item": {
+							"type": "menu-item",
+							"hint":"layout-menu-base-item-hint",
+							"label": "base-item"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-start-level": {
+							"type": "select",
+							"hint":"layout-menu-start-level-item-hint",
+							"label": "start-level",
+							"options": [
+								{ "value": "1", "label": "1" },
+								{ "value": "2", "label": "2" },
+								{ "value": "3", "label": "3" },
+								{ "value": "4", "label": "4" },
+								{ "value": "5", "label": "5" },
+								{ "value": "6", "label": "6" },
+								{ "value": "7", "label": "7" },
+								{ "value": "8", "label": "8" },
+								{ "value": "9", "label": "9" },
+								{ "value": "10", "label": "10" }
+							],
+							"default": "1"
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"menu-end-level": {
+							"type": "select",
+							"hint":"layout-menu-end-level-hint",
+							"label": "end-level",
+							"options": [
+								{ "value": "0", "label": "all" },
+								{ "value": "1", "label": "1" },
+								{ "value": "2", "label": "2" },
+								{ "value": "3", "label": "3" },
+								{ "value": "4", "label": "4" },
+								{ "value": "5", "label": "5" },
+								{ "value": "6", "label": "6" },
+								{ "value": "7", "label": "7" },
+								{ "value": "8", "label": "8" },
+								{ "value": "9", "label": "9" },
+								{ "value": "10", "label": "10" }
+							],
+							"default": "0"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-show-icon": {
+							"type": "checkbox",
+							"hint":"layout-menu-show-icon-hint",
+							"label": "show-icon",
+							"value": 1,
+							"default": 1
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-show-description": {
+							"type": "checkbox",
+							"hint":"layout-menu-show-description-hint",
+							"label": "show-description",
+							"value": 1,
+							"default": 1
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-show-submenu": {
+							"type": "checkbox",
+							"hint":"layout-menu-show-submenu-hint",
+							"label": "show-submenu",
+							"value": 1,
+							"default": 0
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"menu-sub-effect": {
+							"type": "select",
+							"hint":"layout-menu-sub-effect-hint",
+							"label": "menu-sub-effect",
+							"options": [
+								{ "value": "1", "label": "none" },
+								{ "value": "2", "label": "fading" },
+								{ "value": "3", "label": "slide" }
+							],
+							"default": "1"
+						}
+					},
+					"requires": {
+						"menu-show-submenu": 1
+					}
+				},
+				{
+					"class": "col-12 separator-after",
+					"controls": {
+						"menu-mobile-target": {
+							"type": "checkbox",
+							"hint":"layout-menu-mobile-target-hint",
+							"label": "mobile-target",
+							"value": 1,
+							"default": 1
+						}
+					}
+				},
+				{
+					"class": "col-12 separator-after display-in-layout",
+					"controls": {
+						"visible_in": {
+							"type": "checkbox",
+							"hint":"layout-menu-display-in-layout-hint",
+							"check-none": false,
+							"label": "display-in-layout",
+							"options": [
+								{ "value": "lg", "label": "desktop" },
+								{ "value": "md", "label": "laptop" },
+								{ "value": "sm", "label": "tablet" },
+								{ "value": "xs", "label": "smartphone" }
+							],
+							"default": [ "lg", "md", "sm", "xs" ]
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"class": {
+							"type": "text",
+							"hint":"layout-menu-custom-classes-hint",
+							"label": "custom-classes"
+						}
+					}
+				}
+			]
+		}
+	]
+}

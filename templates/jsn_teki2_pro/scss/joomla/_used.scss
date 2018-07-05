@@ -1,0 +1,84 @@
+
+// ======================================
+// --------------- Padding --------------
+// ======================================
+
+@for $i from 0 through 15 {
+  .padding-#{$i * 5} { padding: 5px * $i; } 
+  .padding-top-#{$i * 5} { padding-top: 5px * $i; } 
+  .padding-bottom-#{$i * 5} { padding-bottom: 5px * $i; } 
+  .padding-left-#{$i * 5} { @include rtl-padding-left(5px * $i); } 
+  .padding-right-#{$i * 5} { @include rtl-padding-right(5px * $i); } 
+}
+
+// ======================================
+// --------------- Margin ---------------
+// ======================================
+
+@for $i from 0 through 15 {
+  .margin-#{$i * 5} { margin: 5px * $i; } 
+  .margin-top-#{$i * 5} { margin-top: 5px * $i; } 
+  .margin-bottom-#{$i * 5} { margin-bottom: 5px * $i; } 
+  .margin-left-#{$i * 5} { @include rtl-margin-left(5px * $i); } 
+  .margin-right-#{$i * 5} { @include rtl-margin-right(5px * $i); } 
+}
+
+
+// ======================================
+// ---- Top Bottom Left Right -----------
+// ======================================
+
+.middle {
+  top: 50%;
+}
+
+@for $i from 0 through 15 {
+  .top-#{$i * 5} { top: 5px * $i; } 
+  .bottom-#{$i * 5} { bottom: 5px * $i; } 
+  .left-#{$i * 5} { @include rtl-left(5px * $i); } 
+  .right-#{$i * 5} { @include rtl-right(5px * $i); } 
+}
+
+// ======================================
+// ------------- Font Weight ------------
+// ======================================
+
+@for $i from 1 through 7 {
+  .font-weight-#{$i * 100} { font-weight: 100 * $i; } 
+}
+
+// ======================================
+// ------------- Font Size ------------
+// ======================================
+
+@for $i from 1 through 50 {
+  .font-size-#{$i} { font-size: 1px * $i; } 
+}
+
+
+// ======================================
+// ------------- Display ------------
+// ======================================
+
+.display-inline {
+  display: inline-block;
+}
+
+// ======================================
+// --------------- Position -------------
+// ======================================
+
+@each $position in relative, absolute, fixed, static {
+  .p-#{$position}{
+    position: #{$position}
+  }
+}
+
+// ======================================
+// ----------------- Width---------------
+// ======================================
+
+@for $i from 1 through 20 {
+  .width-#{$i * 5} { width: 5px * $i; } 
+}
+

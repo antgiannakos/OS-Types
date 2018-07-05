@@ -1,0 +1,143 @@
+/**
+ * @version    $Id$
+ * @package    SUN Framework
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+
+iframe {
+   border: 1px solid #ccc;
+}
+#adminForm.form-select-module {
+   margin-top: 0;
+}
+.searchtools-module-row{
+   height: 100%;
+}
+.searchtools-module-container-filters {
+   flex: 0 0 285px;
+   padding-top: 16px;
+   background-color: #EFEFEF;
+   overflow-y: auto;
+   border: 1px solid #DDDDDD;
+   border-top: none;
+}
+.searchtools-module-container-filters .searchtools-module-field-filter {
+   float: left;
+   padding: 8px 0;
+}
+.searchtools-module-field-filter input {
+   padding: 7px 12px;
+   height: auto;
+}
+.searchtools-module-container-filters .searchtools-module-field-filter:first-child {
+   padding-top: 0;
+}
+.searchtools-module-container-filters .apply-filters{
+   margin-right: 8px;
+}
+.searchtools-module-results {
+   display: block;
+   height: 100%;
+   overflow-y: auto;
+   border-right: 1px solid #ddd;
+}
+.searchtools-module-results table {
+   font-size: 12px;
+   text-align: center;
+}
+.searchtools-module-results .table .col-md-1 {
+   width: 10%;
+   max-width: 10%;
+}
+.searchtools-module-results .table .col-md-2 {
+   width: 20%;
+   max-width: 20%;
+}
+.searchtools-module-results .table .col-md-3 {
+   width: 30%;
+   max-width: 30%;
+}
+
+.searchtools-module-results table thead th,.searchtools-module-results table tr td{
+  border: none;
+  padding: 9px;
+  vertical-align: middle;
+}
+
+.searchtools-module-results table thead th {
+   text-align: center;
+}
+.searchtools-module-results table .align-left,
+.searchtools-module-results table .thead th.align-left {
+   text-align: left;
+}
+.searchtools-module-results table i {
+   font-size: 20px;
+   transition: all 0.3s ease-in-out;
+}
+.searchtools-module-results table i.fa-edit {
+   color: #202123;
+   opacity: 0.5;
+   font-size: 14px;
+}
+.searchtools-module-results table i.fa-edit:hover {
+   opacity: 1;
+}
+.searchtools-module-results table i.fa-check-circle-o{
+   color: #2B7527;
+}  
+.searchtools-module-results table i.fa-times-circle-o{
+   color: #CE3C3E;
+}
+.searchtools-module-container-filters > div {
+   display: block;
+   clear: both;
+   width: 100%;
+   position: relative;
+}
+.searchtools-module-container-filters i.fa-search {
+   font-size: 13px;
+   position: absolute;
+   right: 15px;
+   top: 10px;
+}
+.searchtools-module-container-filters select {
+   border: 1px solid #ccc;
+   height: 33px;
+   min-width: 150px;
+   width: 100%;
+   padding: 0 0 0 10px;
+   border-radius: 3px;
+}
+.searchtools-module-container-filters select option {
+   border-right: 1px solid #cccccc;
+   padding: 5px 10px;
+}
+.searchtools-module-container-filters .clearfix .btn{
+   margin-top: 8px;
+}
+.searchtools-module-results .row0{
+   background-color: #F9F9F9; 
+   box-shadow: inset 0 -1px 0 0 rgba(236,238,239,0.5), 0 -1px 0 0 #ECEEEF;
+}
+.searchtools-module-results .row1{
+   background-color: #FFFFFF; 
+   box-shadow: inset 0 -1px 0 0 #ECEEEF;
+}
+.searchtools-module-results .label.label-info{
+    background-color: #5BC0DE;
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-weight: bold;
+    line-height: 14px;
+    font-size: 11px;   
+}
+.searchtools-module-results td.align-left a{
+   color: #0C5DCF;
+}

@@ -1,0 +1,22 @@
+{
+	"class": "page-content",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"show_on_front_page": {
+							"type": "checkbox",
+							"hint":"layout-page-content-show-on-front-page",
+							"label": "show-on-front-page",
+							"value": "1",
+							"default": "1"
+						}
+					}
+				}
+			]
+		}
+	],
+	"one-time-item": true
+}

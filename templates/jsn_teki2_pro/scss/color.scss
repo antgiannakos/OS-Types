@@ -1,0 +1,40 @@
+/* PLEASE BE VERY CAREFUL WHEN EDITTING THIS FILE !
+   Don't change our color variables in line 5 & 6.
+*/
+
+$main-color: false !default;
+$sub-color: false !default;
+
+@if $main-color != false{
+	.text--main-color{
+		color: $main-color;
+	}
+	.btn-teki{
+		color: $main-color !important;
+		border-color: $main-color !important;
+	}
+	.btn-teki:hover{
+		background: $main-color;
+		color: #fff !important;
+	}
+	.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus{
+		background-color: $main-color;
+    	border-color: $main-color;
+	}
+	.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus{
+		color: $main-color;
+	}	
+	#kwho .btn-link i,#kstats .btn-link i{
+		color: $main-color;
+	}
+	#kunena.layout .kwho-admin{
+		color: $main-color;
+	}
+	.sunfw-breadcrumb .breadcrumb > li.active{
+		color: $main-color;
+	}
+	//K2
+	table.calendar tr td.calendarToday{
+		background: $main-color;
+	}
+}

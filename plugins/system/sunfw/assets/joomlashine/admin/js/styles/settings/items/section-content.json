@@ -1,0 +1,64 @@
+{
+	"class": "content-settings",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"custom": {
+							"type": "checkbox",
+							"hint":"style-use-custom-settings-hint",
+							"label": "use-custom-settings",
+							"value": 1
+						}
+					}
+				}
+			]
+		},
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"text-color": {
+							"type": "color-picker",
+							"hint":"style-section-content-color-hint",
+							"label": "color"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"font-size-base": {
+							"type": "slider",
+							"hint":"style-section-content-font-size-hint",
+							"label": "font-size",
+							"default": "",
+							"suffix": "px"
+						}
+					}
+				},
+				{
+					"class": "col-12",
+					"controls": {
+						"line-height": {
+							"type": "slider",
+							"hint":"style-section-content-line-height-hint",
+							"label": "line-height",
+							"min": 0,
+							"max": 5,
+							"step": 0.1,
+							"default": "",
+							"suffix": "em"
+						}
+					}
+				}
+			],
+			"requires": {
+				"custom": 1
+			}
+		}
+	]
+}

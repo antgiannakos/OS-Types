@@ -1,0 +1,49 @@
+{
+	"class": "module-position",
+	"rows": [
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"name": {
+							"type": "text",
+							"hint":"megamenu-module-position-name-hint",
+							"label": "name"
+						}
+					}
+				}
+			]
+		},
+		{
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"module-position": {
+							"type": "module-position",
+							"hint":"megamenu-module-position-position-hint",
+							"label": "position"
+						}
+					}
+				}
+
+			]
+		},
+		{
+			"class": "separator-before",
+			"cols": [
+				{
+					"class": "col-12",
+					"controls": {
+						"class": {
+							"type": "text",
+							"hint":"megamenu-module-position-custom-classes-hint",
+							"label": "custom-classes"
+						}
+					}
+				}
+			]
+		}
+	]
+}
